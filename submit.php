@@ -54,7 +54,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST'){
 
 
     $to = $Email;
-    $subject = "Registration successful";
+    $subject = "Welcome On Board";
     $html = '
     <!DOCTYPE html>
         <html>
@@ -147,70 +147,8 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST'){
     $result = file_get_contents($url, false, $context);
     if ($result === FALSE) { /* Handle error */ }
 
-    var_dump($result);
+    //var_dump($result);
 
-
-
-    // Mailing
-    // require_once "Mail.php";
-    // $from = "E-CELL VNIT <contact@ecellvnit.org>";    //your mail id
-    // $to = $Email;
-    // $subject = "Registration successful";
-    // $body = '
-    // <!DOCTYPE html>
-    // <html>
-    //     <head>
-    //         <style>
-    //             li{
-    //                 padding:10px;
-    //             }
-    //             p{
-    //                 font-size:16px;
-    //             }
-    //         </style>
-    //     </head>
-    //     <body style="width:100%; background-color:#fff; padding:50px 30px; color:1e1e1e; margin-top:100px;font-family:Helvetica,Arial,sans-serif">
-    //     <div style="background-color:#000;width:90%;  padding:10px 30px;"><img src="https://www.ecellvnit.org/img/logo-ecell.png"></div>
-    //         <div style="width:90%; background-color:#f7f9fb; padding:50px 30px;color: #212121;">
-    //             <h3><b>Hello '.$Name.',</b></h3>
-    //             <p style="font-size:18px;">Thank You for joining campus ambassador program. All the important details will be sent to you very shortly. <b></b><br></p>
-
-    //         </div>
-
-    //         <hr>
-    //         <div style="padding:50px 30px; width:90%;color:#fff; background-color:#1e1e1e;">
-    //             <h5>Contact Us</h5>
-    //             <p>Anushree Rungta<br>
-    //             (Core Coordinator)</p>
-    //             <p>+91 8830 431811</p>
-    //             <p>or</p>
-    //             <p>Mail Us: contact@ecellvnit.org</p>
-
-    //         </div>
-
-    //     </body>
-    // </html>';
-
-    // $host = "ssl://smtp.gmail.com";
-    // $port = "465";
-    // $username = "contact@ecellvnit.org";          //your mail id
-    // $password = "ECELL@123";                      //password of this mail id
-
-    // $headers = array('MIME-Version' => '1.0rn',
-    //     'Content-Type' => "text/html; charset=ISO-8859-1rn",
-    //     'From' => $from,
-    //     'To' => $to,
-    //     'Subject' => $subject);
-    // $smtp = Mail::factory('smtp',
-    //     array('host' => $host,
-    //         'port' => $port,
-    //         'auth' => true,
-    //         'username' => $username,
-    //         'password' => $password));
-
-
-
-    // $mail = $smtp->send($to, $headers, $body);
 
 
 
