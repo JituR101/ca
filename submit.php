@@ -20,8 +20,8 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST'){
     $Approach = $_POST['Approach'];
     $Requirements = $_POST['Requirements'];
 
-    // error_reporting(E_ERROR | E_PARSE);
-    // mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+    error_reporting(E_ERROR | E_PARSE);
+    mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
     try{
         $con=mysqli_connect("localhost:3306","vipul3","Ecellvnit123@","CampusAmbassador");
@@ -53,66 +53,164 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST'){
 
 
 
-    // Mailing
-    require_once "Mail.php";
-    $from = "E-CELL VNIT <contact@ecellvnit.org>";    //your mail id
     $to = $Email;
     $subject = "Registration successful";
-    $body = '
+    $html = '
     <!DOCTYPE html>
-    <html>
-        <head>
-            <style>
-                li{
-                    padding:10px;
-                }
-                p{
-                    font-size:16px;
-                }
-            </style>
-        </head>
-        <body style="width:100%; background-color:#fff; padding:50px 30px; color:1e1e1e; margin-top:100px;font-family:Helvetica,Arial,sans-serif">
-        <div style="background-color:#000;width:90%;  padding:10px 30px;"><img src="https://www.ecellvnit.org/img/logo-ecell.png"></div>
-            <div style="width:90%; background-color:#f7f9fb; padding:50px 30px;color: #212121;">
-                <h3><b>Hello '.$Name.',</b></h3>
-                <p style="font-size:18px;">Thank You for joining campus ambassador program. All the important details will be sent to you very shortly. <b></b><br></p>
+        <html>
+            <head>
+                <style>
+                    li{
+                        padding:10px;
+                    }
+                    p{
+                        font-size:16px;
+                    }
 
-            </div>
+                    *{
+                        font-family:Helvetica,Arial,sans-serif;
+                    }
 
-            <hr>
-            <div style="padding:50px 30px; width:90%;color:#fff; background-color:#1e1e1e;">
-                <h5>Contact Us</h5>
-                <p>Anushree Rungta<br>
-                (Core Coordinator)</p>
-                <p>+91 8830 431811</p>
-                <p>or</p>
-                <p>Mail Us: contact@ecellvnit.org</p>
+                    h2{
+                        text-align: center;
+                        margin-top: 150px;
 
-            </div>
+                    }
+                    html, body{
+                        background-color:#f7f9fb;
+                        margin: 0;
+                    }
+                    .context {
+                        font-size: 12px;
+                        padding: 40px 60px;
+                        margin-left:10%;
+                        margin-right: 10%;
+                    }
 
-        </body>
-    </html>';
+                    .context p{
+                        font-size: 12px;
+                    }
+                    p{
+                        margin: 15px 0px;
+                    }
 
-    $host = "ssl://smtp.gmail.com";
-    $port = "465";
-    $username = "contact@ecellvnit.org";          //your mail id
-    $password = "ECELL@123";                      //password of this mail id
+                </style>
+            </head>
+            <body>
 
-    $headers = array('MIME-Version' => '1.0rn',
-        'Content-Type' => "text/html; charset=ISO-8859-1rn",
-        'From' => $from,
-        'To' => $to,
-        'Subject' => $subject);
-    $smtp = Mail::factory('smtp',
-        array('host' => $host,
-            'port' => $port,
-            'auth' => true,
-            'username' => $username,
-            'password' => $password));
+                <div style="background: #0b0b0b; padding:10px 30px;"><img src="https://www.ecellvnit.org/img/logo-ecell.png"></div>
+                <h2 style="font-size:22px;">Welcome to Campus Ambassador Program</h2><br>
+
+                <div class="context">
 
 
+                    <h3><b>Hello '.$Name.',</b></h3>
 
-    $mail = $smtp->send($to, $headers, $body);
+
+                    <p>Thank You for registering! You are now a part of Central India’s Biggest Entrepreneurship Summit.</p>
+                    <div>
+                        <p>We hope this mail finds you in the best of your health and cheerful spirits. We are well pleased to have you on board for this program.</p>
+
+
+                        <p>
+                      To keep you updated, all the relevant details will be e-mailed to you very shortly.
+                            Over this month, you will get access to plenty of valuable resources, which will help you guide your way through this program.<br>
+                      For queries and in case of any difficulty, feel free to contact us.<br>
+
+                    </p>
+                        <p>
+                            With warm regards,<br>
+                            Anushree Rungta<br>
+                            Core-Coordinator, Ecell VNIT
+                        </p>
+
+
+                    </div>
+                </div>
+            </body>
+        </html>
+';
+
+
+    $url = 'https://startupconclave.ecellvnit.org/send';
+    $data = array('subject' => $subject, 'email' => $to, 'html' => $html, 'pass' => 'intheend');
+
+    // use key 'http' even if you send the request to https://...
+    $options = array(
+        'http' => array(
+            'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
+            'method'  => 'POST',
+            'content' => http_build_query($data)
+        )
+    );
+    $context  = stream_context_create($options);
+    $result = file_get_contents($url, false, $context);
+    if ($result === FALSE) { /* Handle error */ }
+
+    var_dump($result);
+
+
+
+    // Mailing
+    // require_once "Mail.php";
+    // $from = "E-CELL VNIT <contact@ecellvnit.org>";    //your mail id
+    // $to = $Email;
+    // $subject = "Registration successful";
+    // $body = '
+    // <!DOCTYPE html>
+    // <html>
+    //     <head>
+    //         <style>
+    //             li{
+    //                 padding:10px;
+    //             }
+    //             p{
+    //                 font-size:16px;
+    //             }
+    //         </style>
+    //     </head>
+    //     <body style="width:100%; background-color:#fff; padding:50px 30px; color:1e1e1e; margin-top:100px;font-family:Helvetica,Arial,sans-serif">
+    //     <div style="background-color:#000;width:90%;  padding:10px 30px;"><img src="https://www.ecellvnit.org/img/logo-ecell.png"></div>
+    //         <div style="width:90%; background-color:#f7f9fb; padding:50px 30px;color: #212121;">
+    //             <h3><b>Hello '.$Name.',</b></h3>
+    //             <p style="font-size:18px;">Thank You for joining campus ambassador program. All the important details will be sent to you very shortly. <b></b><br></p>
+
+    //         </div>
+
+    //         <hr>
+    //         <div style="padding:50px 30px; width:90%;color:#fff; background-color:#1e1e1e;">
+    //             <h5>Contact Us</h5>
+    //             <p>Anushree Rungta<br>
+    //             (Core Coordinator)</p>
+    //             <p>+91 8830 431811</p>
+    //             <p>or</p>
+    //             <p>Mail Us: contact@ecellvnit.org</p>
+
+    //         </div>
+
+    //     </body>
+    // </html>';
+
+    // $host = "ssl://smtp.gmail.com";
+    // $port = "465";
+    // $username = "contact@ecellvnit.org";          //your mail id
+    // $password = "ECELL@123";                      //password of this mail id
+
+    // $headers = array('MIME-Version' => '1.0rn',
+    //     'Content-Type' => "text/html; charset=ISO-8859-1rn",
+    //     'From' => $from,
+    //     'To' => $to,
+    //     'Subject' => $subject);
+    // $smtp = Mail::factory('smtp',
+    //     array('host' => $host,
+    //         'port' => $port,
+    //         'auth' => true,
+    //         'username' => $username,
+    //         'password' => $password));
+
+
+
+    // $mail = $smtp->send($to, $headers, $body);
 
 
 
@@ -134,7 +232,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST'){
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Material+Icons" />
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <!-- CSS Files -->
   <link href="assets/css/material-kit.css?v=2.0.5" rel="stylesheet" />
@@ -146,7 +244,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST'){
     <div class="container">
       <div class="navbar-translate">
         <a class="navbar-brand" href="https://www.ecellvnit.org/">
-          <img src="assets/img/conso.png" width="20%"> </a>
+          <img src="assets/img/conso.png" width="150px"> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="sr-only">Toggle navigation</span>
           <span class="navbar-toggler-icon"></span>
