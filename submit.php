@@ -20,8 +20,8 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST'){
     $Approach = $_POST['Approach'];
     $Requirements = $_POST['Requirements'];
 
-    error_reporting(E_ERROR | E_PARSE);
-    mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+    // error_reporting(E_ERROR | E_PARSE);
+    // mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
     try{
         $con=mysqli_connect("localhost:3306","vipul3","Ecellvnit123@","CampusAmbassador");
@@ -55,7 +55,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST'){
 
     // Mailing
     require_once "Mail.php";
-    $from = "E-CELL VNIT <noreply@ecellvnit.org>";    //your mail id
+    $from = "E-CELL VNIT <contact@ecellvnit.org>";    //your mail id
     $to = $Email;
     $subject = "Registration successful";
     $body = '
@@ -93,10 +93,10 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST'){
         </body>
     </html>';
 
-    $host = "ssl://sharedlinux.cloudhostdns.net";
+    $host = "ssl://smtp.gmail.com";
     $port = "465";
-    $username = "noreply@ecellvnit.org";          //your mail id
-    $password = "VNIT@123";                      //password of this mail id
+    $username = "contact@ecellvnit.org";          //your mail id
+    $password = "ECELL@123";                      //password of this mail id
 
     $headers = array('MIME-Version' => '1.0rn',
         'Content-Type' => "text/html; charset=ISO-8859-1rn",
