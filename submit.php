@@ -31,7 +31,7 @@ $query = mysqli_query($con,"insert into campus (Name,`College City`,`College Nam
 
 
 
-
+require_once "Mail.php";
 $from = "E-CELL VNIT <contact@ecellvnit.org>";    //your mail id
         $to = $Email;
         $subject = "Registration successful";
