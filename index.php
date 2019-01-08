@@ -12,7 +12,7 @@
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Material+Icons" />
-  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <!-- CSS Files -->
   <link href="assets/css/material-kit.css?v=2.0.5" rel="stylesheet" />
@@ -23,7 +23,7 @@
     <div class="container">
       <div class="navbar-translate">
         <a class="navbar-brand" href="https://www.ecellvnit.org/">
-          <img src="assets/img/conso.png" width="150px"> </a>
+          <img src="assets/img/conso1.png" width="150px"> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="sr-only">Toggle navigation</span>
           <span class="navbar-toggler-icon"></span>
@@ -57,7 +57,7 @@
       </div>
     </div>
   </nav>
-  <div class="page-header header-filter" data-parallax="true" style="background-image: url('assets/img/ca.jpg')">
+  <div class="page-header header-filter" data-parallax="true" style="background-image: url('assets/img/ca_bac.jpg')">
     <div class="container" style="text-align:center">
       <div class="row">
         <div class="col-md-8 ml-auto mr-auto col-sm-12">
@@ -74,7 +74,6 @@
   </div>
   <div class="main main-raised">
 
-    <div style="position:relative;height:0;padding-bottom:56.24%"><iframe src="https://www.youtube.com/embed/gKfnDdUL-LE?ecver=2&controls=0&showinfo=0&modestbranding=1&vq=highres&rel=0" style="position:absolute;width:100%;height:100%;left:0" width="640" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
 
 
     <div class="container">
@@ -85,13 +84,18 @@
             <h5 class="description">Consortium's Campus Ambassador Program is a campus connect program that aims to form a network of like-minded students across India. The program facilitates and nurtures future leaders of the country and contributes to their career growth. We want to empower and groom select students across India who will serve as  experts in their respective institutions.</h5>
           </div>
         </div>
+        <div style="margin-top:80px"></div>
+
+        <div style="position:relative;height:0;padding-bottom:56.24%"><iframe src="https://www.youtube.com/embed/gKfnDdUL-LE?ecver=2&controls=0&showinfo=0&modestbranding=1&vq=highres&rel=0" style="position:absolute;width:100%;height:100%;left:0" width="640" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+
+<div style="margin-top:80px"></div>
         <h2 class="title">Incentives</h2>
         <div class="features">
           <div class="row">
             <div class="col-md-4">
               <div class="info">
-                <div class="icon icon-info">
-                  <i class="material-icons">aspect_ratio</i>
+                <div class="icon ">
+                  <i class="material-icons">featured_play_list</i>
                 </div>
                 <h4 class="info-title">Certificate</h4>
                 <p>Top CAs will be awarded a Certificate Of Organization by Consortium, VNIT Nagpur recognizing their work</p>
@@ -99,8 +103,8 @@
             </div>
             <div class="col-md-4">
               <div class="info">
-                <div class="icon icon-success">
-                  <i class="material-icons">remove_from_queue</i>
+                <div class="icon">
+                  <i class="material-icons">airplay</i>
                 </div>
                 <h4 class="info-title">Webinars</h4>
                 <p>Access to exclusive webinars organised by E-Cell VNIT Nagpur</p>
@@ -108,8 +112,8 @@
             </div>
             <div class="col-md-4">
               <div class="info">
-                <div class="icon icon-danger">
-                  <i class="material-icons">near_me</i>
+                <div class="icon">
+                  <i class="material-icons">highlight</i>
                 </div>
                 <h4 class="info-title">Internships</h4>
                 <p>Top 20 Capmus Ambassadors will be given Internship Opportunity</p>
@@ -129,13 +133,13 @@
                     			      <div class="col-md-6">
                     			         <div class="form-group">
                       			          <label  for="f1-full-name">Full Name *</label>
-                                      <input type="text" name="Name" placeholder="eg. Sagar Agrawal" class="f1-full-name form-control" id="f1-full-name" required>
+                                      <input type="text" name="Name"  class="f1-full-name form-control" id="f1-full-name" required>
                                   </div>
                     			      </div>
                     			      <div class="col-md-6">
                     			        <div class="form-group">
                                     <label for="f1-email">Email *</label>
-                                    <input type="email" name="Email" placeholder="eg. contact@ecellvnit.org" class="f1-email form-control" id="f1-email" required>
+                                    <input type="email" name="Email" class="f1-email form-control" id="f1-email" required>
                                 </div>
 
 
@@ -144,7 +148,7 @@
 
                     			        <div class="form-group">
                                     <label  for="f1-college-name">College Name *</label>
-                                    <input type="text" name="CollegeName" placeholder="eg. VNIT" class="f1-college-name form-control" id="f1-college-name" required>
+                                    <input type="text" name="CollegeName"  class="f1-college-name form-control" id="f1-college-name" required>
                                 </div>
 
                     			      </div>
@@ -155,7 +159,7 @@
                     			      <div class="col-md-6">
                     			        <div class="form-group">
                                     <label  for="f1-college-city">College City *</label>
-                                    <input type="text" name="CollegeCity" placeholder="eg. Nagpur" class="f1-college-city form-control" id="f1-college-city" required>
+                                    <input type="text" name="CollegeCity" class="f1-college-city form-control" id="f1-college-city" required>
                                 </div>
 
                     			      </div>
@@ -170,7 +174,7 @@
 
                     			        <div class="form-group">
                                     <label for="f1-college-pincode">Pincode *</label>
-                                    <input type="number" name="CollegePincode" placeholder="eg. 440010" class="f1-college-pincode form-control" id="f1-college-pincode" required>
+                                    <input type="number" name="CollegePincode"  class="f1-college-pincode form-control" id="f1-college-pincode" required>
                                 </div>
                                 </div>
                                 <div class="col-md-12">
@@ -184,13 +188,13 @@
                     			      <div class="col-md-6">
                     			        <div class="form-group">
                                     <label for="f1-mobile-number">Mobile Number *</label>
-                                    <input type="number" pattern="[789][0-9]{9}" name="MobileNumber" placeholder="eg. 7875759416" class="f1-mobile-number form-control" id="f1-mobile-number" required>
+                                    <input type="number" pattern="[789][0-9]{9}" name="MobileNumber" class="f1-mobile-number form-control" id="f1-mobile-number" required>
                                 </div>
                     			      </div>
                     			      <div class="col-md-6">
                     			        <div class="form-group">
                                     <label for="f1-whatsapp-number">Whatsapp Number *</label>
-                                    <input type="number" name="WhatsappNumber" placeholder="eg. 7875759416" class="f1-whatsapp-number form-control" id="f1-whatsapp-number" required>
+                                    <input type="number" name="WhatsappNumber"  class="f1-whatsapp-number form-control" id="f1-whatsapp-number" required>
                                 </div>
                     			      </div>
                     			      <div class="col-md-6">
@@ -276,56 +280,7 @@
   </div>
 
 
-  <footer>
-                    <!-- End Links -->
-                    <div class="container" style="padding: 60px 30px">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-6">
-
-
-
-
-
-
-                                    <a href="/" style="margin-left: 20px;">
-                                        <img class="g-width-100--xs g-height-auto--xs" src="assets/img/conso.png" width="150px" alt="Ecell Logo">
-                                    </a>
-
-
-                                <br><br>
-                                <a class="s-header__action-link" href=" https://m.facebook.com/vnitecell/" target="_blank">
-                                    <i class="g-padding-r-5--xs fa fa-facebook"></i>
-                                    <span class="g-display-none--xs g-display-inline-block--sm"> </span>
-                                </a>
-                                <a class="s-header__action-link" href="https://twitter.com/ecell_vnit" target="_blank">
-                                    <i class="g-padding-r-5--xs fa fa-twitter"></i>
-                                    <span class="g-display-none--xs g-display-inline-block--sm"> </span>
-                                </a>
-                                <a class="s-header__action-link" href=" https://www.instagram.com/ecellvnit/" target="_blank">
-                                    <i class="g-padding-r-5--xs fa fa-instagram"></i>
-                                    <span class="g-display-none--xs g-display-inline-block--sm"> </span>
-                                </a>
-
-                                <a class="s-header__action-link" href=" https://www.linkedin.com/company/6615520/" target="_blank">
-                                    <i class="g-padding-r-5--xs fa fa-linkedin"></i>
-                                    <span class="g-display-none--xs g-display-inline-block--sm"> </span>
-                                </a>
-                                <a class="s-header__action-link" href=" https://www.youtube.com/channel/UC0KNOmODhqLcEpcfN9qEsIQ" target="_blank">
-                                    <i class="g-padding-r-5--xs fa fa-youtube"></i>
-                                    <span class="g-display-none--xs g-display-inline-block--sm"> </span>
-                                </a>
-                            </div>
-                            <div class="col-sm-12 col-md-6">
-                                    <p class="g-color--white">Contact:<b><a href="https://ecellvnit.org/team.php"> Team</a></b></p>
-                                    <p class="g-color--white">For Any Queries Contact:<br><b>contact@ecellvnit.org<b></b></b></p><b><b>
-
-                            </div>
-
-
-                        </div>
-                    </div>
-                    <!-- End Copyright -->
-                </footer>
+                  <?php include("footer.php") ?>
 
   <!--   Core JS Files   -->
   <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>

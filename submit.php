@@ -170,7 +170,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST'){
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Material+Icons" />
-  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <!-- CSS Files -->
   <link href="assets/css/material-kit.css?v=2.0.5" rel="stylesheet" />
@@ -280,56 +280,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST'){
 
     </div>
 </div>
-<footer>
-                    <!-- End Links -->
-                    <div class="container" style="padding: 60px 30px">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-6">
-
-
-
-
-
-
-                                    <a href="/" style="margin-left: 20px;">
-                                        <img class="g-width-100--xs g-height-auto--xs" src="assets/img/conso.png" width="150px" alt="Ecell Logo">
-                                    </a>
-
-
-                                <br><br>
-                                <a class="s-header__action-link" href=" https://m.facebook.com/vnitecell/" target="_blank">
-                                    <i class="g-padding-r-5--xs fa fa-facebook"></i>
-                                    <span class="g-display-none--xs g-display-inline-block--sm"> </span>
-                                </a>
-                                <a class="s-header__action-link" href="https://twitter.com/ecell_vnit" target="_blank">
-                                    <i class="g-padding-r-5--xs fa fa-twitter"></i>
-                                    <span class="g-display-none--xs g-display-inline-block--sm"> </span>
-                                </a>
-                                <a class="s-header__action-link" href=" https://www.instagram.com/ecellvnit/" target="_blank">
-                                    <i class="g-padding-r-5--xs fa fa-instagram"></i>
-                                    <span class="g-display-none--xs g-display-inline-block--sm"> </span>
-                                </a>
-
-                                <a class="s-header__action-link" href=" https://www.linkedin.com/company/6615520/" target="_blank">
-                                    <i class="g-padding-r-5--xs fa fa-linkedin"></i>
-                                    <span class="g-display-none--xs g-display-inline-block--sm"> </span>
-                                </a>
-                                <a class="s-header__action-link" href=" https://www.youtube.com/channel/UC0KNOmODhqLcEpcfN9qEsIQ" target="_blank">
-                                    <i class="g-padding-r-5--xs fa fa-youtube"></i>
-                                    <span class="g-display-none--xs g-display-inline-block--sm"> </span>
-                                </a>
-                            </div>
-                            <div class="col-sm-12 col-md-6">
-                                    <p class="g-color--white">Contact:<b><a href="https://ecellvnit.org/team.php"> Team</a></b></p>
-                                    <p class="g-color--white">For Any Queries Contact:<br><b>contact@ecellvnit.org<b></b></b></p><b><b>
-
-                            </div>
-
-
-                        </div>
-                    </div>
-                    <!-- End Copyright -->
-                </footer>
+<?php include("footer.php") ?>
 
 <!--   Core JS Files   -->
   <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
