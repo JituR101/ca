@@ -46,8 +46,8 @@ if(isset($_POST['register'])){
                                                                       'Password' varchar(255)
                                                                     )");
 
-    $create_table1 = mysqli_query($con, "CREATE TABLE IF NOT EXISTS CA('Name' varchar(255)));
-    $insert = mysqli_query($con,"INSERT INTO CA ('Name',`College City`,`College Name`,`College Strength`,`College Address`,`College Pincode`,`Current Address`,`Current Pincode`,`Mobile Number`,`Whatsapp Number`,Email,Motive,Experience,Skills,Approach,Arrangements)
+    $create_table2 = mysqli_query($con, "CREATE TABLE IF NOT EXISTS CA('Name' varchar(255))");
+    $insert = mysqli_query($con,"INSERT INTO CA ('Name',`College City`,`College Name`,`College Strength`,`College Address`,`College Pincode`,`Current Address`,`Current Pincode`,`Mobile Number`,`Whatsapp Number`,'Email','Motive','Experience','Skills','Approach','Arrangements')
                                 VALUES('$Name','$CollegeCity','$CollegeName','$CollegeStrength','$CollegeAddress','$CollegePincode','$CurrentAddress','$CurrentPincode','$MobileNumber','$WhatsappNumber','$Email','$Motive','$Experience','$skills_string','$Approach','$Requirements')");
 
 
