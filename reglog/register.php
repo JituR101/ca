@@ -1,55 +1,55 @@
 <?php
 
 
-if( $_SERVER['REQUEST_METHOD'] == 'POST'){
+if(isset($_POST['register'])){
 
-    $Name = $_POST['Name'];
-    $CollegeCity = $_POST['CollegeCity'];
-    $CollegeName = $_POST['CollegeName'];
-    $CollegeStrength = $_POST['CollegeStrength'];
-    $CollegeAddress = $_POST['CollegeAddress'];
-    $CollegePincode = $_POST['CollegePincode'];
-    $CurrentAddress = $_POST['CurrentAddress'];
-    $CurrentPincode = $_POST['CurrentPincode'];
-    $MobileNumber = $_POST['MobileNumber'];
-    $WhatsappNumber = $_POST['WhatsappNumber'];
-    $Email = $_POST['Email'];
-    $Motive = $_POST['Motive'];
-    $Experience = $_POST['Experience'];
-    $skills = $_POST['skills'];
-    $Approach = $_POST['Approach'];
-    $Requirements = $_POST['Requirements'];
+  require "../dbconnect/connect_to_signups.php";
 
-    error_reporting(E_ERROR | E_PARSE);
-    mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+    $Name = $con->real_escape_string($_POST['Name']);
+    $CollegeCity = $con->real_escape_string($_POST['CollegeCity']);
+    $CollegeName = $con->real_escape_string($_POST['CollegeName']);
+    $CollegeStrength = $con->real_escape_string($_POST['CollegeStrength']);
+    $CollegeAddress = $con->real_escape_string($_POST['CollegeAddress']);
+    $CollegePincode = $con->real_escape_string($_POST['CollegePincode']);
+    $CurrentAddress = $con->real_escape_string($_POST['CurrentAddress']);
+    $CurrentPincode = $con->real_escape_string($_POST['CurrentPincode']);
+    $MobileNumber = $con->real_escape_string($_POST['MobileNumber']);
+    $WhatsappNumber = $con->real_escape_string($_POST['WhatsappNumber']);
+    $Email = $con->real_escape_string($_POST['Email']);
+    $Motive = $con->real_escape_string($_POST['Motive']);
+    $Experience = $con->real_escape_string($_POST['Experience']);
+    $skills = $con->real_escape_string($_POST['skills']);
+    $Approach = $con->real_escape_string($_POST['Approach']);
+    $Requirements = $con->real_escape_string($_POST['Requirements']);
 
-    try{
-        $con=mysqli_connect("localhost:3306","vipul3","Ecellvnit123@","CampusAmbassador");
-    }
-    catch(MySQLi_Sql_Exception $ex){
+    // error_reporting(E_ERROR | E_PARSE);
+    // mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
-            echo("<p>Error in connecting</p>");
-
-        }
-
-
-
-
-    // Check connection
-    if (mysqli_connect_errno()){
-        echo "Failed to connect to MySQL: " . mysqli_connect_error();
-    }
     $skills_string = implode(', ', $_POST['skills']);
 
-    try{
-        $query = mysqli_query($con,"insert into campus (Name,`College City`,`College Name`,`College Strength`,`College Address`,`College Pincode`,`Current Address`,`Current Pincode`,`Mobile Number`,`Whatsapp Number`,Email,Motive,Experience,Skills,Approach,Arrangements)
-                                  values('$Name','$CollegeCity','$CollegeName','$CollegeStrength','$CollegeAddress','$CollegePincode','$CurrentAddress','$CurrentPincode','$MobileNumber','$WhatsappNumber','$Email','$Motive','$Experience','$skills_string','$Approach','$Requirements')");
+    $create_table1 = mysqli_query($con, "CREATE TABLE IF NOT EXISTS CA('Name' varchar(255),
+                                                                      'College City' varchar(255),
+                                                                      'College Name' varchar(255),
+                                                                      'College Strength' varchar(255),
+                                                                      'College Address' varchar(255),
+                                                                      'College Pincode' varchar(255),
+                                                                      'Current Address' varchar(255),
+                                                                      'Current Pincode' varchar(255),
+                                                                      'Mobile Number' varchar(255),
+                                                                      'Whatsapp Number' varchar(255),
+                                                                      'Email' varchar(255),
+                                                                      'Motive' varchar(255),
+                                                                      'Experience' varchar(255),
+                                                                      'Skills' varchar(255),
+                                                                      'Approach' varchar(255),
+                                                                      'Arrangements' varchar(255),
+                                                                      'Password' varchar(255)
+                                                                    )");
 
-    }
-    catch(MySQLi_Sql_Exception $ex){
-            echo("<p>Error in connecting</p>");
+    $create_table1 = mysqli_query($con, "CREATE TABLE IF NOT EXISTS CA('Name' varchar(255)));
+    $insert = mysqli_query($con,"INSERT INTO CA ('Name',`College City`,`College Name`,`College Strength`,`College Address`,`College Pincode`,`Current Address`,`Current Pincode`,`Mobile Number`,`Whatsapp Number`,Email,Motive,Experience,Skills,Approach,Arrangements)
+                                VALUES('$Name','$CollegeCity','$CollegeName','$CollegeStrength','$CollegeAddress','$CollegePincode','$CurrentAddress','$CurrentPincode','$MobileNumber','$WhatsappNumber','$Email','$Motive','$Experience','$skills_string','$Approach','$Requirements')");
 
-        }
 
 
 

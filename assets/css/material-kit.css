@@ -46,7 +46,7 @@ section {
 
 body {
   margin: 0;
-  font-family: 'Merriweather', serif;
+  font-family: 'Montserrat', serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -422,7 +422,7 @@ template {
 }
 
 html {
-  font-family: sans-serif;
+  font-family: "Montserrat";
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -450,7 +450,7 @@ section {
 
 body {
   margin: 0;
-  font-family: 'Merriweather', serif;
+  font-family: 'Montserrat', serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -5636,7 +5636,7 @@ button.close {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: 'Merriweather', serif;
+  font-family: 'Montserrat', serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5761,7 +5761,7 @@ button.close {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: 'Merriweather', serif;
+  font-family: 'Montserrat', serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -10910,7 +10910,7 @@ legend {
 }
 
 .serif-font {
-  font-family: 'Merriweather', serif;
+  font-family: 'Montserrat', serif;
 }
 
 * {
@@ -14665,7 +14665,7 @@ h6,
 .h2,
 .h3,
 .h4 {
-  font-family: 'Merriweather', serif;
+  font-family: 'Montserrat', serif;
   font-weight: 300;
   line-height: 1.5em;
 }
@@ -14756,7 +14756,7 @@ small,
 .footer-big h4,
 .media .media-heading {
   font-weight: 700;
-  font-family: 'Merriweather', serif;
+  font-family: 'Montserrat', serif;
 }
 
 .title,

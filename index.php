@@ -1,22 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8" />
-  <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="assets/img/favicon.png">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <title>
-    Campus Ambassador Programme
-  </title>
-  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
-  <!--     Fonts and icons     -->
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Material+Icons" />
-  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-  <!-- CSS Files -->
-  <link href="assets/css/material-kit.css?v=2.0.5" rel="stylesheet" />
-</head>
+<?php include("includes/head.php") ?>
 
 <body class="landing-page sidebar-collapse">
   <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
@@ -66,7 +51,7 @@
           <h3>Your Story Starts With Us</h4>
           <br>
           <a href="#signin" class="btn btn-danger btn-raised btn-lg">
-            Join Now <i class="fa fa-sign-in"></i>
+            Register Now <i class="fa fa-sign-in"></i>
           </a>
         </div>
       </div>
@@ -80,7 +65,7 @@
       <div class="section text-center">
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto">
-            <h2 class="title">About Campus Ambassador Programm</h2>
+            <h2 class="title">About Campus Ambassador Program</h2>
             <h5 class="description">Consortium's Campus Ambassador Program is a campus connect program that aims to form a network of like-minded students across India. The program facilitates and nurtures future leaders of the country and contributes to their career growth. We want to empower and groom select students across India who will serve as  experts in their respective institutions.</h5>
           </div>
         </div>
@@ -125,9 +110,9 @@
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto">
             <h4 class="text-center description"><b>So here's a chance to be an extended part of the organizing team of Consortium'19 and ignite a spirit of entrepreneurship among the young minds of your college.</b></h4>
-            <h2 class="text-center title">Join Now</h2>
+            <h2 class="text-center title">Register Now</h2>
 
-                    	<form role="form" action="submit.php" method="post" class="f1 contact-form container" >
+                    	<form role="form" action="reglog/register.php" method="post" class="f1 contact-form container" >
                     	  <div class="row">
 
                     			      <div class="col-md-6">
@@ -261,7 +246,7 @@
                             <div class="col-md-12" style="display:flex; justify-content:center">
 
                               <div class="f1-buttons">
-                                    <button type="submit" class="btn btn-submit btn-danger btn-raised">Submit</button>
+                                    <button type="submit" name="register" class="btn btn-submit btn-danger btn-raised">Submit</button>
                                 </div>
                             </div>
 
@@ -280,7 +265,7 @@
   </div>
 
 
-                  <?php include("footer.php") ?>
+                  <?php include("includes/footer.php") ?>
 
   <!--   Core JS Files   -->
   <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
