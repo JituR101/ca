@@ -7,7 +7,8 @@
     require "dbconnect.php";
     $Email = $con->real_escape_string($_POST['Email']);
     $Password = $con->real_escape_string($_POST['Password']);
-    if($email=="" || $password==""){
+
+    if($Email=="" || $Password==""){
       echo "Please fill all the details";
     }else{
       $login = mysqli_query($con,"SELECT * FROM CA WHERE Email='$Email'");
