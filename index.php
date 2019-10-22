@@ -1,142 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include("includes/head.php") ?>
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    Campus Ambassador Programme
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Material+Icons" />
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- CSS Files -->
+  <link href="assets/css/material-kit.css?v=2.0.5" rel="stylesheet" />
+</head>
 
-<body>
-  <?php include("includes/header.php");?>
-  <div class="s-promo-block-v3 g-bg-position--center g-fullheight--xs" style=";"id="skew1" >
-            <div class="container g-ver-center--sm g-padding-y-0--xs g-padding-y-0--sm">
-                <div class="g-margin-t-30--xs g-margin-t-40--sm g-margin-b-30--xs g-margin-b-50--md">
-                    <h1 class="g-font-size-60--xs g-font-size-80--sm g-font-size-80--lg g-font-weight--600" style="color:#FFFFFF">CAMPUS AMBASSADOR</br>PROGRAM</h1>
+<body class="landing-page sidebar-collapse">
+  <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
+    <div class="container">
+      <div class="navbar-translate">
+        <a class="navbar-brand" href="https://www.ecellvnit.org/">
+          <img src="assets/img/conso1.png" width="150px"> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" titl e="" data-placement="bottom" href="https://twitter.com/ecellvnit" target="_blank" data-original-title="Follow us on Twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://m.facebook.com/vnitecell/" target="_blank" data-original-title="Like us on Facebook">
+              <i class="fa fa-facebook-square"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.instagram.com/ecellvnit/" target="_blank" data-original-title="Follow us on Instagram">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.linkedin.com/company/the-entrepreneurship-cell-vnit-nagpur/" target="_blank" data-original-title="Follow us on Linkedin">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="page-header header-filter" data-parallax="true" style="background-image: url('assets/img/ca_bac.jpg')">
+    <div class="container" style="text-align:center">
+      <div class="row">
+        <div class="col-md-8 ml-auto mr-auto col-sm-12">
 
+          <h1 class="title"><b>Campus Ambassador<br>Program</b></h1>
+          <h3>Your Story Starts With Us</h4>
+          <br>
+          <a href="#signin" class="btn btn-danger btn-raised btn-lg">
+            Join Now <i class="fa fa-sign-in"></i>
+          </a>
+          <a href="login.php" class="btn btn-danger btn-raised btn-lg">
+            Login<i class="fa fa-sign-in"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main main-raised">
+
+
+
+    <div class="container">
+      <div class="section text-center">
+        <div class="row">
+          <div class="col-md-8 ml-auto mr-auto">
+            <h2 class="title">About Campus Ambassador Programm</h2>
+            <h5 class="description">Consortium's Campus Ambassador Program is a campus connect program that aims to form a network of like-minded students across India. The program facilitates and nurtures future leaders of the country and contributes to their career growth. We want to empower and groom select students across India who will serve as  experts in their respective institutions.</h5>
+          </div>
+        </div>
+        <div style="margin-top:80px"></div>
+
+        <div style="position:relative;height:0;padding-bottom:56.24%"><iframe src="https://www.youtube.com/embed/gKfnDdUL-LE?ecver=2&controls=0&showinfo=0&modestbranding=1&vq=highres&rel=0" style="position:absolute;width:100%;height:100%;left:0" width="640" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+
+<div style="margin-top:80px"></div>
+        <h2 class="title">Incentives</h2>
+        <div class="features">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="info">
+                <div class="icon ">
+                  <i class="material-icons">featured_play_list</i>
                 </div>
-                <div class="row">
-                    <div class="col-sm-8 col-sm-push-4 g-margin-b-50--xs g-margin-b-0--md">
-                        <div class="s-promo-block-v3__divider g-display-none--xs g-display-block--md"></div>
-                        <div class="row">
-                            <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
-                                <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".4s">
-                                    <p class="g-font-size-30--xs g-font-size-30--sm g-font-size-30--lg g-font-weight--600 g-color--white">Your Story Starts With Us</p>
+                <h4 class="info-title">Certificate</h4>
+                <p>Top CAs will be awarded a Certificate Of Organization by Consortium, VNIT Nagpur recognizing their work</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="info">
+                <div class="icon">
+                  <i class="material-icons">airplay</i>
+                </div>
+                <h4 class="info-title">Webinars</h4>
+                <p>Access to exclusive webinars organised by E-Cell VNIT Nagpur</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="info">
+                <div class="icon">
+                  <i class="material-icons">highlight</i>
+                </div>
+                <h4 class="info-title">Internships</h4>
+                <p>Top 20 Capmus Ambassadors will be given Internship Opportunity</p>
+              </div>
+            </div>
+        </div>
+        </div>
+      <div class="section section-contacts" id="signin">
+        <div class="row">
+          <div class="col-md-8 ml-auto mr-auto">
+            <h4 class="text-center description"><b>So here's a chance to be an extended part of the organizing team of Consortium'19 and ignite a spirit of entrepreneurship among the young minds of your college.</b></h4>
+            <h2 class="text-center title">Join Now</h2>
+
+                    	<form role="form" action="submit.php" method="post" class="f1 contact-form container" >
+                    	  <div class="row">
+
+                    			      <div class="col-md-6">
+                    			         <div class="form-group">
+                      			          <label  for="f1-full-name">Full Name *</label>
+                                      <input type="text" name="Name"  class="f1-full-name form-control" id="f1-full-name" required>
+                                  </div>
+                    			      </div>
+                    			      <div class="col-md-6">
+                    			        <div class="form-group">
+                                    <label for="f1-email">Email *</label>
+                                    <input type="email" name="Email" class="f1-email form-control" id="f1-email" required>
+                                </div>
+
+
+                    			      </div>
+                    			      <div class="col-md-6">
+
+                    			        <div class="form-group">
+                                    <label  for="f1-college-name">College Name *</label>
+                                    <input type="text" name="CollegeName"  class="f1-college-name form-control" id="f1-college-name" required>
+                                </div>
+
+                    			      </div>
+
+
+
+
+                    			      <div class="col-md-6">
+                    			        <div class="form-group">
+                                    <label  for="f1-college-city">College City *</label>
+                                    <input type="text" name="CollegeCity" class="f1-college-city form-control" id="f1-college-city" required>
+                                </div>
+
+                    			      </div>
+                    			      <div class="col-md-6">
+                    			        <div class="form-group">
+                                    <label  for="f1-college-strength">College Strength *</label>
+                                    <input type="number" name="CollegeStrength" placeholder="eg. 4000" class="f1-college-strength form-control" id="f1-college-strength" required>
+                                </div>
+
+                    			      </div>
+                    			      <div class="col-md-6">
+
+                    			        <div class="form-group">
+                                    <label for="f1-college-pincode">Pincode *</label>
+                                    <input type="number" name="CollegePincode"  class="f1-college-pincode form-control" id="f1-college-pincode" required>
+                                </div>
+                                </div>
+                                <div class="col-md-12">
+                    			        <div class="form-group">
+                                    <label for="f1-college-address">College Address *</label>
+                                    <textarea name="CollegeAddress" placeholder=""
+                                    	                 class="f1-college-address form-control" id="f1-college-address" required></textarea>
+                                </div>
+
+                    			      </div>
+                    			      <div class="col-md-6">
+                    			        <div class="form-group">
+                                    <label for="f1-mobile-number">Mobile Number *</label>
+                                    <input type="number" pattern="[789][0-9]{9}" name="MobileNumber" class="f1-mobile-number form-control" id="f1-mobile-number" required>
+                                </div>
+                    			      </div>
+                    			      <div class="col-md-6">
+                    			        <div class="form-group">
+                                    <label for="f1-whatsapp-number">Whatsapp Number *</label>
+                                    <input type="number" name="WhatsappNumber"  class="f1-whatsapp-number form-control" id="f1-whatsapp-number" required>
+                                </div>
+                    			      </div>
+                    			      <div class="col-md-6">
+
+                    			        <div class="form-group input-field " style="display:none">
+                                    <label for="multiple-checkboxes">Skills *</label>
+                                    <select id="multiple-checkboxes" name="skills[]" multiple="multiple" required>
+                                        <option selected value="None">Video editing</option>
+                                        <option value="Content Writing">Content Writing</option>
+                                        <option value="Poster Design">Poster Design</option>
+                                        <option value="Marketing">Marketing</option>
+                                        <option value="Publicity">Publicity</option>
+                                    </select>
+                                </div>
+                    			      </div>
+                    			      <div class="col-md-6">
+                    			        <div class="form-group" style="display:none">
+                                    <label>Will you be able to organize workshop (getting permission, a lecture hall, projector etc.) in your institute if E-Cell VNIT team takes care of the trainer and other requirements?   *</label>
+                                    <select name="Requirements" required>
+                                        <option selected value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                    </select>
+                                </div>
+
+                    			      </div>
+
+
+
+
+                                <div class="form-group" style="display:none">
+                                    <label for="f1-current-address">Current Address *</label>
+                                    <textarea name="CurrentAddress" placeholder=""
+                                              class="f1-current-address form-control" id="f1-current-address" required>X</textarea>
+                                </div>
+                                <div class="form-group" style="display:none">
+                                    <label for="f1-current-pincode">Pincode *</label>
+                                    <input type="number" value="000000" name="CurrentPincode" placeholder="eg. 440010" class="f1-current-pincode form-control" id="f1-current-pincode" required>
+                                </div>
+
+
+
+                                <div class="form-group" style="display:none">
+                                    <label for="f1-motive">Primary motive to apply for this post *</label>
+                                    <textarea name="Motive" placeholder=""
+                                              class="f1-motive form-control" id="f1-motive" required>X</textarea>
+                                </div>
+                                <div class="form-group" style="display:none">
+                                    <label for="f1-experience">Relevant past experience *</label>
+                                    <textarea name="Experience" placeholder=""
+                                              class="f1-experience form-control" id="f1-experience" required>X</textarea>
+                                </div>
+
+                                <script type="text/javascript">
+                                    $(document).ready(function() {
+                                        $('#multiple-checkboxes').multiselect();
+                                    });
+                                </script>
+                                <div class="form-group" style="display:none">
+                                    <label for="f1-approach">State ( in not more than 4 steps )your approach in Organizing an event (choose any Entrepreneurship Workshop as an example)  *</label>
+                                    <textarea name="Approach" placeholder=""
+                                              class="f1-approach form-control" id="f1-approach" required>X</textarea>
+                                </div>
+                                <br><br>
+                            <div class="col-md-12" style="display:flex; justify-content:center">
+
+                              <div class="f1-buttons">
+                                    <button type="submit" class="btn btn-submit btn-danger btn-raised">Submit</button>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 col-sm-pull-8">
-                        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
-                            <a href=#register>
-                                <i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-right"></i>
-                                <span class="text-uppercase g-font-size-25--xs g-color--white g-padding-x-15--xs"><b>Register Now</b></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- About -->
-        <div class="g-promo-section g-bg-color--primary" id="about">
-            <div class="container g-padding-y-10--xs g-padding-y-60--sm">
-                <div class="row">
-                    <div class="col-md-3 g-margin-t-15--xs g-margin-b-60--xs g-margin-b-0--lg">
-                        <!--<p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-25--xs">Ecell</p>-->
-                        <br><div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
-                            <h2 class="g-font-size-40--xs g-font-size-50--sm g-font-size-40--md g-color--white">ABOUT</h2>
-                        </div>
-                        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".3s">
-                            <h2 class="g-font-size-40--xs g-font-size-50--sm g-font-size-40--md g-color--white">CA-PROGRAM</h2>
-                        </div>
-                    </div>
-                    <div class="col-md-8 col-md-offset-1">
-                        <p class="g-font-size-28--xs g-color--white">Consortium's Campus Ambassador Program is a campus connect program that aims to form a network of like-minded students across India. The program facilitates and nurtures future leaders of the country and contributes to their career growth. We want to empower and groom select students across India who will serve as experts in their respective institutions. </p>
-                    </div>
-                </div>
-            </div>
 
-        </div>
-        <!-- End About -->
-    <div class="container g-padding-y-10--xs g-padding-y-40--sm g-bg-color--dark-light" id="signin">
-      <div class="col-md-12 g-margin-t-15--xs g-margin-b-60--xs g-margin-b-0--lg">
-                <div class="wow fadeInLeft g-text-center--xs" data-wow-duration=".3" data-wow-delay=".3s">
-                    <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--white g-letter-spacing--2 g-margin-b-25--xs">Get Started</p>
-                    <h2 class="g-font-size-32--xs g-font-size-36--sm g-font-size-36--md g-color--white">Register Now</span></h2>
-                </div>
-        </div>
-    <form class="form-horizontal" method ="post" action="reglog/register.php">
-        <div class="container" style="margin-top:50px">
-          <div class="row">
-            <div class="col-lg-6 g-padding-x-10--xs">
-              <div class="form-group">
-                <input class="form-control s-form-v2__input g-radius--50" type="text" id="f1-full-name" name="Name" placeholder="NAME"  required>
 
-              </div>
-            </div>
-            <div class="col-lg-6 g-padding-x-10--xs">
-              <div class="form-group">
-                <input class="form-control s-form-v2__input g-radius--50" type="email" id="f1-email" placeholder="EMAIL" required>
-              </div>
-            </div>
+                        </div>
+                    	</form>
+
+
+
+
           </div>
-            <div class="row">
-              <div class="col-lg-6 g-padding-x-10--xs">
-                <div class="form-group">
-                  <input class="form-control s-form-v2__input g-radius--50" type="text" id="f1-college-name" name="CollegeName" placeholder="COLLEGE NAME"  required>
-                </div>
-              </div>
-              <div class="col-lg-6 g-padding-x-10--xs">
-                <div class="form-group">
-                  <input class="form-control s-form-v2__input g-radius--50" type="text" id="f1-college-city" name="CollegeCity" placeholder="COLLEGE CITY" required>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-6 g-padding-x-10--xs">
-                <div class="form-group">
-                  <input class="form-control s-form-v2__input g-radius--50" type="text" id="f1-college-strength" name="CollegeStrength" placeholder="Ex. 4000" required>
-                </div>
-              </div>
-              <div class="col-lg-6 g-padding-x-10--xs">
-                <div class="form-group">
-                <input class="form-control s-form-v2__input g-radius--50" type="text" id="f1-college-pincode" name="CollegePincode" placeholder="PINCODE" required>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-6 g-padding-x-10--xs">
-                <div class="form-group">
-                  <textarea class="form-control s-form-v2__input g-radius--50" id="f1-college-address" name="CollegeAddress" placeholder="COLLEGE ADDRESS" required></textarea>
-                </div>
-              </div>
-              <div class="col-lg-6 g-padding-x-10--xs">
-                <div class="form-group">
-                  <input class="form-control s-form-v2__input g-radius--50" id="f1-mobile-number" type="number" pattern="[789][0-9]{9}" name="MobileNumber"  placeholder="MOBILE NO." required>
-                </div>
-              </div>
-            </div>
-
-            </div>
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <!-- <input type="submit" name="submit" value="REGISTER" class="btn btn-info" style="text-align: center"> -->
-                <div class="g-text-center--xs">
-                    <input type="submit" name="submit" value="REGISTER" class="text-uppercase s-btn s-btn--md s-btn--primary-bg g-radius--50 g-padding-x-80--xs"/>
-                </div>
-            </div>
         </div>
-        <br>
-    </form>
-
-
       </div>
-
+    </div>
   </div>
-
-
+  </div>
 
 
                   <?php include("includes/footer.php") ?>
 
-                  <?php include("includes/scripts.php") ?>
-
-
+  <!--   Core JS Files   -->
+  <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
+  <script src="assets/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+  <script src="assets/js/plugins/moment.min.js"></script>
+  <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+  <script src="assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+  <script src="assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+  <!--  Google Maps Plugin    -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+  <script src="assets/js/material-kit.js?v=2.0.5" type="text/javascript"></script>
 </body>
 </html>

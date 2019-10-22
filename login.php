@@ -1,55 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include("includes/head.php") ?>
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    Campus Ambassador Programme
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Material+Icons" />
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- CSS Files -->
+  <link href="assets/css/material-kit.css?v=2.0.5" rel="stylesheet" />
+</head>
 
-<body>
-  <?php include("includes/header.php");?>
-  <div class="s-promo-block-v3 g-bg-position--center g-fullheight--xs" style=";"id="skew1" >
-    <div class="container g-ver-center--sm g-padding-y-0--xs g-padding-y-0--sm">
-      <div class="col-md-12 g-margin-t-15--xs g-margin-b-60--xs g-margin-b-0--lg">
-        <div class="wow fadeInLeft g-text-center--xs" data-wow-duration=".3" data-wow-delay=".3s">
-          <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--white g-letter-spacing--2 g-margin-b-25--xs">Get Started</p>
-            <h2 class="g-font-size-32--xs g-font-size-36--sm g-font-size-36--md g-color--white">Login</span></h2>
+<body class="landing-page sidebar-collapse">
+  <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
+    <div class="container">
+      <div class="navbar-translate">
+        <a class="navbar-brand" href="https://www.ecellvnit.org/">
+          <img src="assets/img/conso1.png" width="150px"> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" titl e="" data-placement="bottom" href="https://twitter.com/ecellvnit" target="_blank" data-original-title="Follow us on Twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://m.facebook.com/vnitecell/" target="_blank" data-original-title="Like us on Facebook">
+              <i class="fa fa-facebook-square"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.instagram.com/ecellvnit/" target="_blank" data-original-title="Follow us on Instagram">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.linkedin.com/company/the-entrepreneurship-cell-vnit-nagpur/" target="_blank" data-original-title="Follow us on Linkedin">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="page-header header-filter" data-parallax="true" style="background-image: url('assets/img/ca_bac.jpg')">
+    <div class="container">
+      <div class="section text-center">
+        <div style="margin-top:80px"></div>
+          <h2 class="title">Login Here</h2>
+          <div class="section section-contacts" id="signin">
+            <div class="row">
+              <div class="col-md-8 ml-auto mr-auto">
+                <form class="f1 contact-form container" method ="post" action="reglog/login.php">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input type="email" name="Email" style="text-transform: none;" class="f1-email form-control" placeholder="* Email">
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input type="password" name="Password" style="text-transform: none;" class="f1-email form-control" placeholder="* Password">
+                    </div>
+                  </div>
+
+                  <div class="col-md-12" style="display:flex; justify-content:center">
+
+                    <div class="f1-buttons">
+                      <button type="submit" name="login" class="btn btn-submit btn-danger btn-raised">Login</button>
+                    </div>
+                  </div>
+                    <div class="col-md-12">
+                        <a href="forgot.php" class="text-center title">Forgot Password</a><br>
+                        <a href="regnew.php" class="text-center title">Not Registered?</a><br>
+                      </div>
+              </form>
+
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <form class="form-horizontal" method ="post" action="reglog/login.php">
-        <div class="g-margin-b-30--xs">
-            <input type="email" name="Email" style="text-transform: none;" class="form-control s-form-v3__input" placeholder="* Email">
-        </div>
-        <div class="g-margin-b-30--xs">
-            <input type="password" name="Password" style="text-transform: none;" class="form-control s-form-v3__input" placeholder="* Password">
-        </div>
-        <div class="g-text-center--xs">
-            <button type="submit" name="login" class="text-uppercase btn-block s-btn s-btn--md s-btn--white-bg g-radius--50 g-padding-x-50--xs g-margin-b-20--xs">Login</button>
-            <a href="forgot.php" class="g-color--white g-font-size-13--xs regclass">Forgot Password</a><br>
-            <a href="regnew.php" class="g-color--white g-font-size-13--xs regclass">Not Registered?</a><br>
-        </div>
-      </form>
-                <!-- <div class="row">
-                    <div class="col-sm-8 col-sm-push-4 g-margin-b-50--xs g-margin-b-0--md">
-                        <div class="s-promo-block-v3__divider g-display-none--xs g-display-block--md"></div>
-                        <div class="row">
-                            <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
-                                <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".4s">
-                                    <p class="g-font-size-30--xs g-font-size-30--sm g-font-size-30--lg g-font-weight--600 g-color--white">Your Story Starts With Us</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 col-sm-pull-8">
-                        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
-                            <a href=#register>
-                                <i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-right"></i>
-                                <span class="text-uppercase g-font-size-25--xs g-color--white g-padding-x-15--xs"><b>Register Now</b></span>
-                            </a>
-                        </div>
-                    </div>
-                </div> -->
-            </div>
-        </div>
-        <?php include("includes/footer.php") ?>
+  </div>
 
-        <?php include("includes/scripts.php") ?>
-      </body>
-      </html>
+
+
+
+
+      <!--   Core JS Files   -->
+      <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
+      <script src="assets/js/core/popper.min.js" type="text/javascript"></script>
+      <script src="assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+      <script src="assets/js/plugins/moment.min.js"></script>
+      <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+      <script src="assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+      <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+      <script src="assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+      <!--  Google Maps Plugin    -->
+      <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+      <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+      <script src="assets/js/material-kit.js?v=2.0.5" type="text/javascript"></script>
+    </body>
+    </html>
