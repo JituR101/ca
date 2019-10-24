@@ -17,7 +17,7 @@
 
     if(isset($_POST['register'])){
 
-    require "dbconnect.php";
+    require "reglog/dbconnect.php";
 
     $Name = $con->real_escape_string($_POST['Name']);
     $CollegeCity = $con->real_escape_string($_POST['CollegeCity']);
