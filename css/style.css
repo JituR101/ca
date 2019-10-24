@@ -5,7 +5,7 @@ html {
   overflow-x: hidden;
 }
 
-html, html a, body {
+html, html a,  {
   -webkit-font-smoothing: antialiased;
 }
 
@@ -2680,7 +2680,7 @@ background: linear-gradient(to right, #26D0CE, #1A2980)!important; /* W3C, IE 10
 
 #skew2{
   padding-top:150px;
-  
+
 }
 
 

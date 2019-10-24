@@ -83,10 +83,7 @@
                       <button type="submit" name="login" class="btn btn-submit btn-danger btn-raised">Login</button>
                     </div>
                   </div>
-                    <div class="col-md-12">
-                        <a href="forgot.php" class="text-center title">Forgot Password</a><br>
-                        <a href="regnew.php" class="text-center title">Not Registered?</a><br>
-                      </div>
+                  
               </form>
 
               </div>

@@ -1,10 +1,23 @@
 <?php
-  error_reporting(E_ALL);
-  ini_set('display_errors', '1');
+// Import PHPMailer classes into the global namespace
+    // These must be at the top of your script, not inside a function
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
 
-if(isset($_POST['register'])){
+    // Load Composer's autoloader
+    require 'vendor/autoload.php';
 
-  require "dbconnect.php";
+    // Instantiation and passing `true` enables exceptions
+    $mail = new PHPMailer(true);
+    //Tell PHPMailer to use SMTP
+    $mail->isSMTP();
+
+    error_reporting(E_ALL);
+    ini_set('display_errors', '1');
+
+    if(isset($_POST['register'])){
+
+    require "dbconnect.php";
 
     $Name = $con->real_escape_string($_POST['Name']);
     $CollegeCity = $con->real_escape_string($_POST['CollegeCity']);
@@ -53,88 +66,37 @@ if(isset($_POST['register'])){
                                 VALUES('$Name','$CollegeCity','$CollegeName','$CollegeStrength','$CollegeAddress','$CollegePincode','$CurrentAddress','$CurrentPincode','$MobileNumber','$Email','$Password')");
 
 
-
-
-    $to = $Email;
-    $subject = "Welcome On Board";
-    $html = '
-    <!DOCTYPE html>
-        <html>
-            <head>
-                <style>
-                    li{
-                        padding:10px;
-                    }
-                    p{
-                        font-size:16px;
-                    }
-
-                    *{
-                        font-family:Helvetica,Arial,sans-serif;
-                    }
-
-                    h2{
-                        text-align: center;
-                        margin-top: 150px;
-
-                    }
-                    html, body{
-                        background-color:#f7f9fb;
-                        margin: 0;
-                    }
-                    .context {
-                        font-size: 12px;
-                        padding: 40px 60px;
-                        margin-left:10%;
-                        margin-right: 10%;
-                    }
-
-                    .context p{
-                        font-size: 12px;
-                    }
-                    p{
-                        margin: 15px 0px;
-                    }
-
-                </style>
-            </head>
-            <body>
-
-                <div style="background: #0b0b0b; padding:10px 30px;"><img src="https://www.ecellvnit.org/img/logo-ecell.png"></div>
-                <h2 style="font-size:22px;">Welcome to Campus Ambassador Program</h2><br>
-
-                <div class="context">
-
-
-                    <h3><b>Hello '.$Name.',</b></h3>
-
-
-                    <p>Thank You for registering! You are now a part of one of the India’s Biggest Entrepreneurship Summit.</p>
-                    <div>
-                        <p>We hope this mail finds you in the best of your health and cheerful spirits. We are well pleased to have you on board for this program.</p>
-
-
-                        <p>
-                      To keep you updated, all the relevant details will be e-mailed to you very shortly.<br>
-                      Use these details to login to your dashboard:<br>
-                      Username: '. $Email .'<br>
-                      Password: '. $Password .'
-                            Over this month, you will get access to plenty of valuable resources, which will help you guide your way through this program.<br>
-                      For queries and in case of any difficulty, feel free to contact us.<br>
-
-                    </p>
-                        <p>
-                            With warm regards,<br>
-                            Gourav Routray<br>
-                            Core-Coordinator, Ecell VNIT
-                        </p>
-
-
-                    </div>
-                </div>
-            </body>
-        </html>
-';
+    //Tell PHPMailer to use SMTP
+    $mail->isSMTP();
+    //Enable SMTP debugging
+    // SMTP::DEBUG_OFF = off (for production use)
+    // SMTP::DEBUG_CLIENT = client messages
+    // SMTP::DEBUG_SERVER = client and server messages
+    $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+    //Set the hostname of the mail server
+    $mail->Host = 'smtp.gmail.com';
+    // use
+    // $mail->Host = gethostbyname('smtp.gmail.com');
+    // if your network does not support SMTP over IPv6
+    //Set the SMTP port number - 587 for authenticated TLS, a.k.a. RFC4409 SMTP submission
+    $mail->Port = 587;
+    //Set the encryption mechanism to use - STARTTLS or SMTPS
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    //Whether to use SMTP authentication
+    $mail->SMTPAuth = true;
+    //Username to use for SMTP authentication - use full email address for gmail
+    $mail->Username = 'username@gmail.com';
+    //Password to use for SMTP authentication
+    $mail->Password = 'jacksparrow1';
+    //Set who the message is to be sent from
+    $mail->setFrom('ecellvnit2k17@gamil.com');
+    //Set who the message is to be sent to
+    $mail->addAddress($Email);
+    //Set the subject line
+    $mail->Subject = 'Welcome On Board';
+    //Read an HTML message body from an external file, convert referenced images to embedded,
+    //convert HTML into a basic plain-text alternative body
+    $mail->msgHTML(file_get_contents('mail.html'), __DIR__);
 
 
     $url = 'https://startupconclave.ecellvnit.org/send';
