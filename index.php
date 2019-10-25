@@ -130,7 +130,7 @@
             <h4 class="text-center description"><b>So here's a chance to be an extended part of the organizing team of Consortium'19 and ignite a spirit of entrepreneurship among the young minds of your college.</b></h4>
             <h2 class="text-center title">Join Now</h2>
 
-                    	<form role="form" action="submit.php" method="post" class="f1 contact-form container" >
+                    	<form role="form" action="reglog/register.php" method="post" class="f1 contact-form container" >
                     	  <div class="row">
 
                     			      <div class="col-md-6">
@@ -231,7 +231,8 @@
                                     <label for="f1-current-address">Current Address *</label>
                                     <textarea name="CurrentAddress" placeholder=""
                                               class="f1-current-address form-control" id="f1-current-address" required>X</textarea>
-                                </div>
+            <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->                    </div>
                                 <div class="form-group" style="display:none">
                                     <label for="f1-current-pincode">Pincode *</label>
                                     <input type="number" value="000000" name="CurrentPincode" placeholder="eg. 440010" class="f1-current-pincode form-control" id="f1-current-pincode" required>
@@ -283,7 +284,7 @@
   </div>
 
 
-                  <?php include("includes/footer.php") ?>
+  <?php include("includes/footer.php") ?>
 
   <!--   Core JS Files   -->
   <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
@@ -294,9 +295,6 @@
   <script src="assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
   <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
   <script src="assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
-  <!--  Google Maps Plugin    -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
-  <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
   <script src="assets/js/material-kit.js?v=2.0.5" type="text/javascript"></script>
 </body>
 </html>
