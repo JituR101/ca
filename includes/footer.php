@@ -8,24 +8,24 @@
                 </a>
                 <br><br>
                 <a class="s-header__action-link" href=" https://m.facebook.com/vnitecell/">
-                    <i class="g-padding-r-5--xs ti-facebook"></i>
-                    <span class="g-display-none--xs g-display-inline-block--sm">Facebook</span>
+                    <i class="fa fa-facebook-square"></i>
+                    <!-- <span class="g-display-none--xs g-display-inline-block--sm">Facebook</span><br> -->
                 </a>
                 <a class="s-header__action-link" href="https://twitter.com/ecell_vnit">
-                    <i class="g-padding-r-5--xs ti-twitter"></i>
-                    <span class="g-display-none--xs g-display-inline-block--sm">Twitter</span>
+                    <i class="fa fa-twitter"></i>
+                    <!-- <span class="g-display-none--xs g-display-inline-block--sm">Twitter</span><br> -->
                 </a>
                 <a class="s-header__action-link" href=" https://www.instagram.com/ecellvnit/">
-                    <i class="g-padding-r-5--xs ti-instagram"></i>
-                    <span class="g-display-none--xs g-display-inline-block--sm">Instagram</span>
+                    <i class="fa fa-instagram"></i>
+                    <!-- <span class="g-display-none--xs g-display-inline-block--sm">Instagram</span><br> -->
                 </a>
                 <a class="s-header__action-link" href=" https://www.linkedin.com/company/6615520/">
-                    <i class="g-padding-r-5--xs ti-linkedin"></i>
-                    <span class="g-display-none--xs g-display-inline-block--sm">LinkedIn</span>
+                    <i class="fa fa-linkedin"></i>
+                    <!-- <span class="g-display-none--xs g-display-inline-block--sm">LinkedIn</span><br> -->
                 </a>
                 <a class="s-header__action-link" href=" https://www.youtube.com/channel/UC0KNOmODhqLcEpcfN9qEsIQ">
-                    <i class="g-padding-r-5--xs ti-youtube"></i>
-                    <span class="g-display-none--xs g-display-inline-block--sm">YouTube</span>
+                    <i class="fa fa-youtube"></i>
+                    <!-- <span class="g-display-none--xs g-display-inline-block--sm">YouTube</span> -->
                 </a>
             </div>
             <div class="col-sm-12 col-md-4 col-lg-4">

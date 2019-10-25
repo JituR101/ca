@@ -1,23 +1,22 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
 // Import PHPMailer classes into the global namespace
     // These must be at the top of your script, not inside a function
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
 
     // Load Composer's autoloader
-    require 'vendor/autoload.php';
+    require '../vendor/autoload.php';
 
     // Instantiation and passing `true` enables exceptions
     $mail = new PHPMailer(true);
     //Tell PHPMailer to use SMTP
     $mail->isSMTP();
 
-    error_reporting(E_ALL);
-    ini_set('display_errors', '1');
-
     if(isset($_POST['register'])){
 
-    require "reglog/dbconnect.php";
+    require "dbconnect.php";
 
     $Name = $con->real_escape_string($_POST['Name']);
     $CollegeCity = $con->real_escape_string($_POST['CollegeCity']);
@@ -128,19 +127,24 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <title>
-    Campus Ambassador Programme
-  </title>
-  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1">
+  <meta name="google-site-verification" content="gXeMBX--H7xSFeawu77WYuSIYyuZQdkI4YQQnV0Hf_Y" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="keywords" content="Ecell, vnit, E-cell VNIT, entrepreneurship cell, consortium 20, 2020, consortium'20, campus Ambassador, program, internship" />
+  <meta name="description" content="Consortium's Campus Ambassador Program is a campus connect program that aims to form a network of like-minded students across India. The program facilitates and nurtures future leaders of the country and contributes to their career growth. We want to empower and groom select students across India who will serve as experts in their respective institutions.">
+  <meta name="author" content="E-Cell VNIT">
+  <title>Campus Ambassador Program | E-Cell VNIT</title>
+
   <!--     Fonts and icons     -->
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/ecell.png">
+  <!-- <link rel="icon" type="image/png" href="assets/img/favicon.png"> -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Material+Icons" />
-  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <!-- CSS Files -->
-  <link href="../assets/css/material-kit.css?v=2.0.5" rel="stylesheet" />
+  <link href="../assets/css/material-kit.css?v=0.0.1" rel="stylesheet" />
+  <link href="../css/global/global.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -149,7 +153,7 @@
     <div class="container">
       <div class="navbar-translate">
         <a class="navbar-brand" href="https://www.ecellvnit.org/">
-          <img src="../assets/img/conso.png" width="150px"> </a>
+          <img src="../img/logo-ecell.png" width="150px"> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="sr-only">Toggle navigation</span>
           <span class="navbar-toggler-icon"></span>
@@ -185,7 +189,7 @@
   </nav>
 
 <!-- Top content -->
-<div class="main main-raised" style="min-height:80vh">
+<div class="main main-raised" style="min-height:80vh" style="background-image: url('../assets/img/ca_bac.jpg')">
     <div class="container"  style="padding-top:150px">
 
         <div class="row">
