@@ -1,3 +1,4 @@
+<!-- FOOTER -->
 <footer class="g-bg-color--dark">
     <!-- Copyright -->
     <div class="container g-padding-y-20--xs">
