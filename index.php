@@ -161,7 +161,7 @@
                                     </select>
                                 </div>
                     			      </div>
-                    			      <div class="col-md-6">
+                    			      <!-- <div class="col-md-6">
                     			        <div class="form-group" style="display:none">
                                     <label>Will you be able to organize workshop (getting permission, a lecture hall, projector etc.) in your institute if E-Cell VNIT team takes care of the trainer and other requirements?   *</label>
                                     <select name="Requirements" required>
@@ -177,11 +177,10 @@
 
                                 <div class="form-group" style="display:none">
                                     <label for="f1-current-address">Current Address *</label>
-                                    <textarea name="CurrentAddress" placeholder=""
-                                              class="f1-current-address form-control" id="f1-current-address" required>X</textarea>
-            <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+                                    <textarea name="CurrentAddress" placeholder="" class="f1-current-address form-control" id="f1-current-address" required>X</textarea>
+                                    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script> -->
   <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->                    </div>
-                                <div class="form-group" style="display:none">
+                                <!-- <div class="form-group" style="display:none">
                                     <label for="f1-current-pincode">Pincode *</label>
                                     <input type="number" value="000000" name="CurrentPincode" placeholder="eg. 440010" class="f1-current-pincode form-control" id="f1-current-pincode" required>
                                 </div>
@@ -208,13 +207,12 @@
                                     <label for="f1-approach">State ( in not more than 4 steps )your approach in Organizing an event (choose any Entrepreneurship Workshop as an example)  *</label>
                                     <textarea name="Approach" placeholder=""
                                               class="f1-approach form-control" id="f1-approach" required>X</textarea>
-                                </div>
-                                <br><br>
+                                </div> -->
+                                <!-- <br><br> -->
                             <div class="col-md-12" style="display:flex; justify-content:center">
-
                               <div class="f1-buttons">
-                                    <button type="submit" class="btn btn-submit btn-danger btn-raised">Submit</button>
-                                </div>
+                                <button name="register" type="submit" class="btn btn-submit btn-danger btn-raised">Submit</button>
+                              </div>
                             </div>
 
 
