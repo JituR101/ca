@@ -4,44 +4,7 @@
 <?php include("includes/head.php") ?>
 
 <body class="landing-page sidebar-collapse">
-  <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
-    <div class="container">
-      <div class="navbar-translate">
-        <a class="navbar-brand" href="https://ca.ecellvnit.org/">
-          <img src="img/logo-ecell.png" width="100em"> </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="navbar-toggler-icon"></span>
-          <span class="navbar-toggler-icon"></span>
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" rel="tooltip" titl e="" data-placement="bottom" href="https://twitter.com/ecellvnit" target="_blank" data-original-title="Follow us on Twitter">
-              <i class="fa fa-twitter"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://m.facebook.com/vnitecell/" target="_blank" data-original-title="Like us on Facebook">
-              <i class="fa fa-facebook-square"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.instagram.com/ecellvnit/" target="_blank" data-original-title="Follow us on Instagram">
-              <i class="fa fa-instagram"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.linkedin.com/company/the-entrepreneurship-cell-vnit-nagpur/" target="_blank" data-original-title="Follow us on Linkedin">
-              <i class="fa fa-linkedin"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <?php include("includes/header.php") ?>
   <div class="page-header header-filter" data-parallax="true" style="background-image: url('assets/img/ca_bac.jpg')">
     <div class="container" style="text-align:center">
       <div class="row">
@@ -198,7 +161,7 @@
                                     </select>
                                 </div>
                     			      </div>
-                    			      <div class="col-md-6">
+                    			      <!-- <div class="col-md-6">
                     			        <div class="form-group" style="display:none">
                                     <label>Will you be able to organize workshop (getting permission, a lecture hall, projector etc.) in your institute if E-Cell VNIT team takes care of the trainer and other requirements?   *</label>
                                     <select name="Requirements" required>
@@ -214,11 +177,10 @@
 
                                 <div class="form-group" style="display:none">
                                     <label for="f1-current-address">Current Address *</label>
-                                    <textarea name="CurrentAddress" placeholder=""
-                                              class="f1-current-address form-control" id="f1-current-address" required>X</textarea>
-            <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+                                    <textarea name="CurrentAddress" placeholder="" class="f1-current-address form-control" id="f1-current-address" required>X</textarea>
+                                    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script> -->
   <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->                    </div>
-                                <div class="form-group" style="display:none">
+                                <!-- <div class="form-group" style="display:none">
                                     <label for="f1-current-pincode">Pincode *</label>
                                     <input type="number" value="000000" name="CurrentPincode" placeholder="eg. 440010" class="f1-current-pincode form-control" id="f1-current-pincode" required>
                                 </div>
@@ -245,13 +207,12 @@
                                     <label for="f1-approach">State ( in not more than 4 steps )your approach in Organizing an event (choose any Entrepreneurship Workshop as an example)  *</label>
                                     <textarea name="Approach" placeholder=""
                                               class="f1-approach form-control" id="f1-approach" required>X</textarea>
-                                </div>
-                                <br><br>
+                                </div> -->
+                                <!-- <br><br> -->
                             <div class="col-md-12" style="display:flex; justify-content:center">
-
                               <div class="f1-buttons">
-                                    <button type="submit" class="btn btn-submit btn-danger btn-raised">Submit</button>
-                                </div>
+                                <button name="register" type="submit" class="btn btn-submit btn-danger btn-raised">Submit</button>
+                              </div>
                             </div>
 
 
