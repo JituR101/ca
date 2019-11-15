@@ -65,7 +65,7 @@
       //Username to use for SMTP authentication - use full email address for gmail
       $mail->Username = 'contact@ecellvnit.org';
       //Password to use for SMTP authentication
-      $mail->Password = 'Entreprenuers1999';
+      $mail->Password = 'Entrepreneurs1999';
       //Set who the message is to be sent from
       $mail->setFrom('contact@ecellvnit.org');
       //Set who the message is to be sent to
