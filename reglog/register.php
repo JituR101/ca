@@ -84,11 +84,11 @@ ini_set('display_errors', '1');
     //Whether to use SMTP authentication
     $mail->SMTPAuth = true;
     //Username to use for SMTP authentication - use full email address for gmail
-    $mail->Username = 'username@gmail.com';
+    $mail->Username = 'contact@ecellvnit.org';
     //Password to use for SMTP authentication
-    $mail->Password = 'jacksparrow1';
+    $mail->Password = 'Entrepreneurs1999';
     //Set who the message is to be sent from
-    $mail->setFrom('ecellvnit2k17@gamil.com');
+    $mail->setFrom('contact@ecellvnit.org');
     //Set who the message is to be sent to
     $mail->addAddress($Email);
     //Set the subject line
