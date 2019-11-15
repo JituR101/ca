@@ -63,11 +63,11 @@
       //Whether to use SMTP authentication
       $mail->SMTPAuth = true;
       //Username to use for SMTP authentication - use full email address for gmail
-      $mail->Username = 'startupconclave@ecellvnit.org';
+      $mail->Username = 'conatact@ecellvnit.org';
       //Password to use for SMTP authentication
-      $mail->Password = 'Entreinsuits1999';
+      $mail->Password = 'Entrepreneurs1999';
       //Set who the message is to be sent from
-      $mail->setFrom('startupconclave@ecellvnit.org');
+      $mail->setFrom('contact@ecellvnit.org');
       //Set who the message is to be sent to
       $mail->addAddress($Email);
       //Set the subject line
