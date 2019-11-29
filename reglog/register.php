@@ -92,7 +92,7 @@
       // }else {
       //   echo(mysqli_error($con));
       // }
-    }
+    // }
     catch (Exception $e)
     {
        echo $e->errorMessage();
