@@ -1,5 +1,12 @@
 <?php
-
+  error_reporting(E_ALL);
+  ini_set('display_errors', '1');
+  use PHPMailer\PHPMailer\PHPMailer;
+  use PHPMailer\PHPMailer\Exception;
+  require '../vendor/autoload.php';
+  // require '../vendor/phpmailer/phpmailer/src/SMTP.php';
+  // require '../vendor/phpmailer/phpmailer/src/PHPMailer.php';
+  // require '../vendor/phpmailer/phpmailer/src/Exception.php';
   $mail = new PHPMailer(true);
   $mail->isSMTP();
   if(isset($_POST['register'])){
@@ -58,7 +65,7 @@
       //Username to use for SMTP authentication - use full email address for gmail
       $mail->Username = 'contact@ecellvnit.org';
       //Password to use for SMTP authentication
-      $mail->Password = 'Entrepreneurs1999';
+      $mail->Password = 'Entrepreneurs199';
       //Set who the message is to be sent from
       $mail->setFrom('contact@ecellvnit.org');
       //Set who the message is to be sent to
