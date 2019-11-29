@@ -3,7 +3,6 @@
   ini_set('display_errors', '1');
   use PHPMailer\PHPMailer\PHPMailer;
   use PHPMailer\PHPMailer\Exception;
-  use PHPMailer\PHPMailer\SMTP;
   require '../vendor/autoload.php';
   // require '../vendor/phpmailer/phpmailer/src/SMTP.php';
   // require '../vendor/phpmailer/phpmailer/src/PHPMailer.php';
@@ -44,11 +43,10 @@
     $insert = mysqli_query($con,"INSERT INTO CA(Name,CollegeCity,CollegeName,CollegeStrength,CollegeAddress,CollegePincode,MobileNumber,Email,Password)
                               VALUES('$Name','$CollegeCity','$CollegeName','$CollegeStrength','$CollegeAddress','$CollegePincode','$MobileNumber','$Email','$Password')");
     $mail = new PHPMailer(TRUE);
-    try {
+
       //Tell PHPMailer to use SMTP
       $mail->isSMTP();
       // Enable SMTP debugging
-      $mail->SMTPDebug = SMTP::DEBUG_SERVER;
       // SMTP::DEBUG_OFF = off (for production use)
       // SMTP::DEBUG_CLIENT = client messages
       // SMTP::DEBUG_SERVER = client and server messages
@@ -91,8 +89,8 @@
       if($mail->send()){
         $result == 1;
       }else { echo 'Mailer Error: '. $mail->ErrorInfo;}
-    }
-    }
+
+
     if($insert && $result==1){
   ?>
   <!DOCTYPE html>
