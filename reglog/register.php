@@ -88,6 +88,8 @@
       // $result = file_get_contents($url, false, $context);
       if($mail->send()){
         $result == 1;
+      }else {
+        echo(mysqli_error($con));
       }
     }
     catch (Exception $e)
