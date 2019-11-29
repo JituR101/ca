@@ -7,8 +7,7 @@
   // require '../vendor/phpmailer/phpmailer/src/SMTP.php';
   // require '../vendor/phpmailer/phpmailer/src/PHPMailer.php';
   // require '../vendor/phpmailer/phpmailer/src/Exception.php';
-  $mail = new PHPMailer(true);
-  $mail->isSMTP();
+
   if(isset($_POST['register'])){
     require "dbconnect.php";
     $Name = $con->real_escape_string($_POST['Name']);
@@ -65,7 +64,7 @@
       //Username to use for SMTP authentication - use full email address for gmail
       $mail->Username = 'contact@ecellvnit.org';
       //Password to use for SMTP authentication
-      $mail->Password = 'Entrepreneurs199';
+      $mail->Password = 'Entrepreneurs1999';
       //Set who the message is to be sent from
       $mail->setFrom('contact@ecellvnit.org');
       //Set who the message is to be sent to
@@ -110,7 +109,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1">
     <meta name="google-site-verification" content="gXeMBX--H7xSFeawu77WYuSIYyuZQdkI4YQQnV0Hf_Y" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="keywords" content="Ecell, vnit, E-cell VNIT, entrepreneurship cell, consortium 20, 2020, consortium'20, campus Ambassador, program, internship" />
+    <meta name="keywords" content="Ecell, Vnit, E-cell VNIT, entrepreneurship cell, consortium 20, 2020, consortium'20, campus Ambassador, program, internship, bhai load aa raha hai" />
     <meta name="description" content="Consortium's Campus Ambassador Program is a campus connect program that aims to form a network of like-minded students across India. The program facilitates and nurtures future leaders of the country and contributes to their career growth. We want to empower and groom select students across India who will serve as experts in their respective institutions.">
     <meta name="author" content="E-Cell VNIT">
     <meta name="theme-color" content="#000000">
