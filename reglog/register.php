@@ -86,9 +86,9 @@
       // );
       // $context  = stream_context_create($options);
       // $result = file_get_contents($url, false, $context);
-      if($mail->send()){
-        $result == 1;
-      }else { echo 'Mailer Error: '. $mail->ErrorInfo;}
+      if(!$mail->send()){
+        echo 'Mailer Error: '. $mail->ErrorInfo;
+      }else { $result == 1;}
 
 
     if($insert && $result==1){
