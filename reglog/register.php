@@ -86,11 +86,12 @@
       // );
       // $context  = stream_context_create($options);
       // $result = file_get_contents($url, false, $context);
-      if($mail->send()){
-        $result == 1;
-      }else {
-        echo(mysqli_error($con));
-      }
+      $result = $mail->send()
+      // if($result){
+      //   $result == 1;
+      // }else {
+      //   echo(mysqli_error($con));
+      // }
     }
     catch (Exception $e)
     {
@@ -100,7 +101,7 @@
     {
        echo $e->getMessage();
     }
-    if($insert && $result==1){
+    if($insert && $result){
   ?>
   <!DOCTYPE html>
   <html lang="en">
@@ -260,7 +261,7 @@
 
   <?php
     }
-    if ($result === FALSE) { echo(mysqli_error($con)); }
+    // if ($result === FALSE) { echo(mysqli_error($con)); }
   }else {
     header("location:../index.php");
   }
