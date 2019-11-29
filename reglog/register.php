@@ -3,6 +3,7 @@
   ini_set('display_errors', '1');
   use PHPMailer\PHPMailer\PHPMailer;
   use PHPMailer\PHPMailer\Exception;
+  use PHPMailer\PHPMailer\SMTP;
   require '../vendor/autoload.php';
   // require '../vendor/phpmailer/phpmailer/src/SMTP.php';
   // require '../vendor/phpmailer/phpmailer/src/PHPMailer.php';
@@ -47,6 +48,7 @@
       //Tell PHPMailer to use SMTP
       $mail->isSMTP();
       // Enable SMTP debugging
+      $mail->SMTPDebug = SMTP::DEBUG_SERVER;
       // SMTP::DEBUG_OFF = off (for production use)
       // SMTP::DEBUG_CLIENT = client messages
       // SMTP::DEBUG_SERVER = client and server messages
@@ -86,22 +88,12 @@
       // );
       // $context  = stream_context_create($options);
       // $result = file_get_contents($url, false, $context);
-      $result = $mail->send()
-      // if($result){
-      //   $result == 1;
-      // }else {
-      //   echo(mysqli_error($con));
-      // }
-    // }
-    catch (Exception $e)
-    {
-       echo $e->errorMessage();
+      if($mail->send()){
+        $result == 1;
+      }else { echo 'Mailer Error: '. $mail->ErrorInfo;}
     }
-    catch (\Exception $e)
-    {
-       echo $e->getMessage();
     }
-    if($insert && $result){
+    if($insert && $result==1){
   ?>
   <!DOCTYPE html>
   <html lang="en">
@@ -261,7 +253,7 @@
 
   <?php
     }
-    // if ($result === FALSE) { echo(mysqli_error($con)); }
+    if ($result === FALSE) { echo(mysqli_error($con)); }
   }else {
     header("location:../index.php");
   }
