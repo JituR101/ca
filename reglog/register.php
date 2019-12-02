@@ -74,6 +74,7 @@
       //Read an HTML message body from an external file, convert referenced images to embedded,
       //convert HTML into a basic plain-text alternative body
       $mail->isHTML(true);
+
       $mail->Body = '<!DOCTYPE html>
           <html>
               <head>
@@ -164,8 +165,8 @@
       // $context  = stream_context_create($options);
       // $result = file_get_contents($url, false, $context);
       if(!$mail->send()){
-        echo 'Mailer Error: '. $mail->ErrorInfo;
-      }else { $result == 1;}
+        echo 'Message was not send';
+      }
 
 
     if($insert){
@@ -328,7 +329,6 @@
 
   <?php
     }
-  
   }else {
     header("location:../index.php");
   }
