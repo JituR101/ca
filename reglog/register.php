@@ -163,7 +163,9 @@
       // );
       // $context  = stream_context_create($options);
       // $result = file_get_contents($url, false, $context);
-      $mail->send();
+      if(!$mail->send()){
+        echo 'Mailer Error: '. $mail->ErrorInfo;
+      }else { $result == 1;}
 
 
     if($insert){
@@ -326,6 +328,7 @@
 
   <?php
     }
+  
   }else {
     header("location:../index.php");
   }
