@@ -150,8 +150,8 @@
                       </div>
                   </div>
               </body>
-          </html>
-'
+          </html>';
+
       // $url = 'https://startupconclave.ecellvnit.org/send';
       // $data = array('subject' => $subject, 'email' => $to, 'html' => $html, 'pass' => 'intheend');
       // use key 'http' even if you send the request to https://...
