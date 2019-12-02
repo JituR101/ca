@@ -73,7 +73,84 @@
       $mail->Subject = 'Welcome On Board';
       //Read an HTML message body from an external file, convert referenced images to embedded,
       //convert HTML into a basic plain-text alternative body
-      $mail->isHTML(file_get_contents('../mail.html'), __DIR__);
+      $mail->isHTML(true);
+      $mail->Body = '<!DOCTYPE html>
+          <html>
+              <head>
+                  <style>
+                      li{
+                          padding:10px;
+                      }
+                      p{
+                          font-size:16px;
+                      }
+
+                      *{
+                          font-family:Helvetica,Arial,sans-serif;
+                      }
+
+                      h2{
+                          text-align: center;
+                          margin-top: 150px;
+
+                      }
+                      html, body{
+                          background-color:#f7f9fb;
+                          margin: 0;
+                      }
+                      .context {
+                          font-size: 12px;
+                          padding: 40px 60px;
+                          margin-left:10%;
+                          margin-right: 10%;
+                      }
+
+                      .context p{
+                          font-size: 12px;
+                      }
+                      p{
+                          margin: 15px 0px;
+                      }
+
+                  </style>
+              </head>
+              <body>
+
+                  <div style="background: #0b0b0b; padding:10px 30px;"><img src="https://www.ecellvnit.org/img/logo-ecell.png"></div>
+                  <h2 style="font-size:22px;">Welcome to Campus Ambassador Program</h2><br>
+
+                  <div class="context">
+
+
+                      <h3><b>Hello '.$Name.',</b></h3>
+
+
+                      <p>Thank You for registering! You are now a part of one of the India’s Biggest Entrepreneurship Summit.</p>
+                      <div>
+                          <p>We hope this mail finds you in the best of your health and cheerful spirits. We are well pleased to have you on board for this program.</p>
+
+
+                          <p>
+                        To keep you updated, all the relevant details will be e-mailed to you very shortly.<br>
+                        Use these details to login to your dashboard:<br>
+                        Username: '. $Email .'<br>
+                        Password: '. $Password .'
+                              Over this month, you will get access to plenty of valuable resources, which will help you guide your way through this program.<br>
+                        For queries and in case of any difficulty, feel free to contact us.<br>
+
+                      </p>
+                          <p>
+                              With warm regards,<br>
+                              Gourav Routray<br>
+                              Core-Coordinator, Ecell VNIT
+                          </p>
+
+
+                      </div>
+                  </div>
+              </body>
+          </html>
+'
       // $url = 'https://startupconclave.ecellvnit.org/send';
       // $data = array('subject' => $subject, 'email' => $to, 'html' => $html, 'pass' => 'intheend');
       // use key 'http' even if you send the request to https://...
@@ -86,9 +163,7 @@
       // );
       // $context  = stream_context_create($options);
       // $result = file_get_contents($url, false, $context);
-      if(!$mail->send()){
-        echo 'Mailer Error: '. $mail->ErrorInfo;
-      }
+      $mail->send();
 
 
     if($insert){
@@ -251,5 +326,7 @@
 
   <?php
     }
-    
+  }else {
+    header("location:../index.php");
+  }
 ?>
