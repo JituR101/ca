@@ -68,7 +68,7 @@
           <li>
             <a href="reglog/logout.php">
               <i class="nc-icon nc-bulb-63"></i>
-              <p>FAQ</p>
+              <p>LOGOUT</p>
             </a>
           </li>
           <li>
