@@ -75,7 +75,7 @@
       <div class="section section-contacts" id="signin">
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto">
-            <h4 class="text-center description"><b>So here's a chance to be an extended part of the organizing team of Consortium'19 and ignite a spirit of entrepreneurship among the young minds of your college.</b></h4>
+            <h4 class="text-center description"><b>So here's a chance to be an extended part of the organizing team of Consortium'20 and ignite a spirit of entrepreneurship among the young minds of your college.</b></h4>
             <h2 class="text-center title">Join Now</h2>
 
                     	<form role="form" action="reglog/register.php" method="post" class="f1 contact-form container" >

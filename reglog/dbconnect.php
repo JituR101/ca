@@ -1,6 +1,6 @@
 <?php
   $db_host = "localhost:3306";
-  $db_username = "vipul3";
+  $db_username = "vipul123";
   $db_pass = "Ecellvnit123@";
   $db_name = "CampusAmbassador";
 

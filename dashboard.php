@@ -12,10 +12,11 @@
   <meta name="keywords" content="Ecell, vnit, E-cell VNIT, entreprenuship cell, consortium 18, 2018, consortium'18, Jugaad, Jugaad 18" />
   <meta name="description" content="Jugaad is an annual event organised by Ecell VNIT which aims to create an inexorable spirit of entrepreneurship amongst students, with the freshmen as particular consideration for the Club. It aims to function as a guide in the form of a fun event for students with creative ideas which can be transformed into successful street level transactions.">
   <meta name="author" content="Sagar Bansal">
-  <meta name="theme-color" content="#b43557">
+
   <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <meta name="theme-color" content="#000000">
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
@@ -66,9 +67,9 @@
             </a>
           </li>
           <li>
-            <a href="faq.php">
+            <a href="reglog/logout.php">
               <i class="nc-icon nc-bulb-63"></i>
-              <p>FAQ</p>
+              <p>LOGOUT</p>
             </a>
           </li>
           <li>
@@ -117,42 +118,7 @@
 
 
         </div>
-        <div class="card-body">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="card card-plain">
-                <div class="card-header">
-                  <h5 class="card-title">Notifications Style</h5>
-                </div>
-                <div class="card-body">
-                  <div class="alert alert-info">
-                    <span>This is a plain notification</span>
-                  </div>
-                  <div class="alert alert-info alert-dismissible fade show">
-                    <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
-                      <i class="nc-icon nc-simple-remove"></i>
-                    </button>
-                    <span>This is a notification with close button.</span>
-                  </div>
-                  <div class="alert alert-info alert-with-icon alert-dismissible fade show" data-notify="container">
-                    <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
-                      <i class="nc-icon nc-simple-remove"></i>
-                    </button>
-                    <span data-notify="icon" class="nc-icon nc-bell-55"></span>
-                    <span data-notify="message">This is a notification with close button and icon.</span>
-                  </div>
-                  <div class="alert alert-info alert-with-icon alert-dismissible fade show" data-notify="container">
-                    <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
-                      <i class="nc-icon nc-simple-remove"></i>
-                    </button>
-                    <span dYouata-notify="icon" class="nc-icon nc-chart-pie-36"></span>
-                    <span data-notify="message">This is a notification with close button and icon and have many lines. You can see that the icon and the close button are always vertically aligned. This is a beautiful notification. So you don't have to worry about the style.</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
       </div>
     </div>
   </div>

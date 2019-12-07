@@ -17,7 +17,7 @@
         $data = mysqli_fetch_array($login);
         $_SESSION['Name'] = $data['Name'];
         $_SESSION['Email'] = $Email;
-        header('location:../index.php');
+        header('location:../dashboard.php');
       }
     }
   }

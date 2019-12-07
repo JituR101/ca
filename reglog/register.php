@@ -134,8 +134,8 @@
                           <p>
                         To keep you updated, all the relevant details will be e-mailed to you very shortly.<br>
                         Use these details to login to your dashboard:<br>
-                        Username: '. $Email .'<br>
-                        Password: '. $Password .'
+                        <b>Username: '. $Email .'</b><br>
+                        <b>Password: '. $Password .'</b><br>
                               Over this month, you will get access to plenty of valuable resources, which will help you guide your way through this program.<br>
                         For queries and in case of any difficulty, feel free to contact us.<br>
 
@@ -258,8 +258,13 @@
             </div>
 
             <div class="row">
-                <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-12 col-lg-offset-3 form-box">
-
+                <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-12 col-lg-offset-3 form-box text-center">
+                  <h3> Congratulations !!<h3><br>
+                    <h4>You have successfully registered to our Campus Ambassador Program</h4>
+                    <h4>Now you will receive an email at your registered email address with a Password.</h4>
+                    <h4>Use that password to login in to your dashboard where you will be assigned the task and each task contains some points.</h4>
+                    <h4>Your Total Points will be shown after completion of Tasks.</h4>
+                    <h4><a href="../index.php">Go back and Login to your dashboard </a></h4>
                 </div>
             </div>
 
@@ -272,7 +277,7 @@
             <div class="row">
                 <div class="col-sm-12 col-md-4 col-lg-4">
                     <a href="index.php">
-                        <img class="g-width-100--xs g-height-auto--xs" src="img/logo-ecell.png" alt="Ecell Logo">
+                        <img class="g-width-100--xs g-height-auto--xs" src="../img/logo-ecell.png" alt="Ecell Logo">
                     </a>
                     <br><br>
                     <a class="s-header__action-link" href=" https://m.facebook.com/vnitecell/">
@@ -297,9 +302,8 @@
                     </a>
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-4">
-                        <p class="g-color--white">For Association Opportunities Contact:<br><b>contactus@ecellvnit.org</b></p>
-                        <p class="g-color--white">For Sponsorship Opportunities Contact:<br><b>corporate@ecellvnit.org<b></p>
-                        <p class="g-color--white">For Speaking Opportunities Contact:<br><b>pr@ecellvnit.org</b></p>
+                        <p class="g-color--white">For Association Opportunities Contact:<br><b>contact@ecellvnit.org</b></p>
+
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-4 g-text-right--md">
                     <p class="g-font-size-14--xs g-margin-b-0--xs g-color--white">© <a class="g-color--primary" href="https://www.ecellvnit.org/" target="_blank">E-cell Vnit</a> All rights reserved.</p>
