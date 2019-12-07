@@ -12,7 +12,7 @@
   <meta name="keywords" content="Ecell, vnit, E-cell VNIT, entreprenuship cell, consortium 18, 2018, consortium'18, Jugaad, Jugaad 18" />
   <meta name="description" content="Jugaad is an annual event organised by Ecell VNIT which aims to create an inexorable spirit of entrepreneurship amongst students, with the freshmen as particular consideration for the Club. It aims to function as a guide in the form of a fun event for students with creative ideas which can be transformed into successful street level transactions.">
   <meta name="author" content="Sagar Bansal">
-  
+
   <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
@@ -33,12 +33,12 @@
         Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
     -->
       <div class="logo">
-        <a href="https://www.ecellvnit.org" class="simple-text logo-mini">
+        <a href="https://ca.www.ecellvnit.org" class="simple-text logo-mini">
           <div class="logo-image-small">
             <img src="assets/img/ecell.png">
           </div>
         </a>
-        <a href="https://www.ecellvnit.org" class="simple-text logo-normal">
+        <a href="https://www.ca.ecellvnit.org" class="simple-text logo-normal">
           CA-PROGRAM
           <!-- <div class="logo-image-big">
             <img src="../assets/img/logo-big.png">
@@ -72,7 +72,7 @@
             </a>
           </li>
           <li>
-            <a href="https://www.ecellvnit.org">
+            <a href="https://www.ecellvnit.org/team.php">
               <i class="nc-icon nc-single-02"></i>
               <p>CONTACT</p>
             </a>

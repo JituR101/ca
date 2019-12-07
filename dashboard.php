@@ -34,12 +34,12 @@
         Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
     -->
       <div class="logo">
-        <a href="https://www.ecellvnit.org" class="simple-text logo-mini">
+        <a href="https://www.ca.ecellvnit.org" class="simple-text logo-mini">
           <div class="logo-image-small">
             <img src="assets/img/ecell.png">
           </div>
         </a>
-        <a href="https://www.ecellvnit.org" class="simple-text logo-normal">
+        <a href="https://www.ca.ecellvnit.org" class="simple-text logo-normal">
           CA-PROGRAM
           <!-- <div class="logo-image-big">
             <img src="../assets/img/logo-big.png">
@@ -73,7 +73,7 @@
             </a>
           </li>
           <li>
-            <a href="https://www.ecellvnit.org">
+            <a href="https://www.ecellvnit.org/team.php">
               <i class="nc-icon nc-single-02"></i>
               <p>CONTACT</p>
             </a>

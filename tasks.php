@@ -34,12 +34,12 @@
         Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
     -->
       <div class="logo">
-        <a href="https://www.ecellvnit.org" class="simple-text logo-mini">
+        <a href="https://www.ca.ecellvnit.org" class="simple-text logo-mini">
           <div class="logo-image-small">
             <img src="assets/img/ecell.png">
           </div>
         </a>
-        <a href="https://www.ecellvnit.org" class="simple-text logo-normal">
+        <a href="https://www.ca.ecellvnit.org" class="simple-text logo-normal">
           CA-PROGRAM
           <!-- <div class="logo-image-big">
             <img src="../assets/img/logo-big.png">
@@ -67,13 +67,13 @@
             </a>
           </li>
           <li>
-            <a href="faq.php">
+            <a href="reglog/logout.php">
               <i class="nc-icon nc-bulb-63"></i>
-              <p>FAQ</p>
+              <p>LOGOUT</p>
             </a>
           </li>
           <li>
-            <a href="https://www.ecellvnit.org">
+            <a href="https://www.ecellvnit.org/team.php">
               <i class="nc-icon nc-single-02"></i>
               <p>CONTACT</p>
             </a>
@@ -109,12 +109,10 @@
     <div class="col-md-12">
       <div class="card">
         <div class="card-header">
-          <h5 class="card-title text-center">WELCOME!</h5>
-          <p class="text-center">Welcome to the College Ambassador Portal of ECELL-VNIT.<p>
-          <p class="text-center">You will receive information about your scores, tasks and instructions here.<p></br>
-          <p class="text-center">We have a planned set of tasks for you, that will add value and worth to each of your contributions, however insignificant you think might be!<p>
-          <p class="text-center">TAKE A MOMENT IN EXPLORING THE TASKS SECTION on the left<p>
-          <p class="text-center">KEEP SHARING AS ALWAYS!</p>
+          <h5 class="card-title text-center">TASKS</h5>
+          <p class="text-center">Here you will be alloted tasks<p>
+          <p class="text-center">Points table based on your performance will be shown in your Dashboard.<p></br>
+
 
 
         </div>
