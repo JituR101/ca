@@ -124,29 +124,35 @@
                   <h5 class="card-title">List of Tasks</h5>
                 </div>
                 <div class="card-body">
-                  <div class="typography-line">
+
                     <h5>Task 1 :  Startup Conclave</h5>
-                  </div>
-                <div class="typography-line">
+
+
                   <p>Giving an ultimate opportunity to the emerging startups,
                      Startup Conclave is aimed towards boosting the entrepreneurship
                       culture and providing the necessary aid to give a head start to your startup.
                       It is a platform where startups from all over India pitch their ideas to a board
                       of investors and stand a chance to win a lump sum of over INR 4 lakhs.</p>
-                      <p>To know more, visit: <a href="https://startupconclave.ecellvnit.org/">Startup Conclave</a>https://startupconclave.ecellvnit.org/</p>
-                  </div>
-                <div class="typography-line">
+                      <p>To know more, visit: <a href="https://startupconclave.ecellvnit.org/"><strong>Startup Conclave </strong>  </a>https://startupconclave.ecellvnit.org/</p>
+
+
                   <p>Your task is to publicise this event, reach the maximum startups you can and convert them into registrations.</p>
-                </div>
-                <div class="typography-line">
+
+
                   <h6>Task 1 :  Startup Conclave</h6>
                   <p>1) On every registration that you successfully bring, will earn you 10 points.</p>
                   <p>2) On completing 100 points, the value of each point that you've earned becomes Rs. 5. That means you'll receive a minimum sum of Rs. 500 if you reach 100 points.</p>
 
-                </div>
-                <div class="typography-line">
+                  <h6>Share the following posts on social media</h6>
+                  <a href="https://www.instagram.com/p/B5nHlLnn68W/?igshid=17msd05owtqmq"><strong>Instagram | StartUp Conclave</strong></a><br>
+                  <a href="https://www.linkedin.com/posts/the-entrepreneurship-cell-vnit-nagpur_startup-entrepreneurship-entrepreneurs-activity-6607617217506959360-xdtX"><strong>LinkedIn | StartUp Conclave</strong></a><br>
+                  <a href="https://m.facebook.com/story.php?story_fbid=2405018873095089&substory_index=0&id=1413870692209917"><strong>Facebook | StartUp Conclave</strong></a><br>
+
+
+
+
                   <p><strong>Note: A registration is said to be complete when the team has completed its monetary transaction during registration.</strong></p>
-                </div>
+
 
 
 
