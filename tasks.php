@@ -133,7 +133,7 @@
                       culture and providing the necessary aid to give a head start to your startup.
                       It is a platform where startups from all over India pitch their ideas to a board
                       of investors and stand a chance to win a lump sum of over INR 4 lakhs.</p>
-                      <p>To know more, visit: https://startupconclave.ecellvnit.org/</p>
+                      <p>To know more, visit: <a href="https://startupconclave.ecellvnit.org/">Startup Conclave</a>https://startupconclave.ecellvnit.org/</p>
                   </div>
                 <div class="typography-line">
                   <p>Your task is to publicise this event, reach the maximum startups you can and convert them into registrations.</p>
