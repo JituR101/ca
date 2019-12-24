@@ -117,7 +117,7 @@
           <p class="text-center">Your primary task is always to increase social media following of ECELL VNIT.</p>
           <p class="text-center"><a href="https://m.facebook.com/vnitecell/"><strong>ECELL VNIT | FACEBOOK</strong></a></p>
           <p class="text-center"><a href="https://www.instagram.com/ecellvnit/"><strong>ECELL VNIT | INSTAGRAM</strong></a></p>
-          <p class="text-center"><a href="https://in.linkedin.com/company/the-entrepreneurship-cell-vnit-nagpur"><strong>ECELL VNIT | ILINKEDIN</strong></a></p>
+          <p class="text-center"><a href="https://in.linkedin.com/company/the-entrepreneurship-cell-vnit-nagpur"><strong>ECELL VNIT | LINKEDIN</strong></a></p>
           <p class="text-center">KEEP SHARING AS ALWAYS!</p>
 
 
