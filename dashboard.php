@@ -114,7 +114,12 @@
           <p class="text-center">You will receive information about your scores, tasks and instructions here.<p></br>
           <p class="text-center">We have a planned set of tasks for you, that will add value and worth to each of your contributions, however insignificant you think might be!<p>
           <p class="text-center">TAKE A MOMENT IN EXPLORING THE TASKS SECTION on the left<p>
+          <p class="text-center">Your primary task is always to increase social media following of ECELL VNIT.</p>
+          <p class="text-center"><a href="https://m.facebook.com/vnitecell/"><strong>ECELL VNIT | FACEBOOK</strong></a></p>
+          <p class="text-center"><a href="https://www.instagram.com/ecellvnit/"><strong>ECELL VNIT | INSTAGRAM</strong></a></p>
+          <p class="text-center"><a href="https://in.linkedin.com/company/the-entrepreneurship-cell-vnit-nagpur"><strong>ECELL VNIT | ILINKEDIN</strong></a></p>
           <p class="text-center">KEEP SHARING AS ALWAYS!</p>
+
 
 
         </div>
