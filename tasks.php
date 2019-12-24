@@ -10,7 +10,6 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Campus Ambassador</title>
   <meta name="keywords" content="Ecell, vnit, E-cell VNIT, entreprenuship cell, consortium 18, 2018, consortium'18, Jugaad, Jugaad 18" />
-  <meta name="description" content="Jugaad is an annual event organised by Ecell VNIT which aims to create an inexorable spirit of entrepreneurship amongst students, with the freshmen as particular consideration for the Club. It aims to function as a guide in the form of a fun event for students with creative ideas which can be transformed into successful street level transactions.">
 
   <meta name="theme-color" content="#000000">
   <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
