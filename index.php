@@ -4,7 +4,10 @@
 <?php include("includes/head.php") ?>
 
 <body class="landing-page sidebar-collapse">
+
   <?php include("includes/header.php") ?>
+
+
   <div class="page-header header-filter" data-parallax="true" style="background-image: url('assets/img/ca_bac.jpg')">
     <div class="container" style="text-align:center">
       <div class="row">
@@ -16,9 +19,9 @@
           <a href="#signin" class="btn btn-danger btn-raised btn-lg">
             Join Now <i class="fa fa-sign-in"></i>
           </a>
-          <a href="login.php" class="btn btn-danger btn-raised btn-lg">
+          <!-- <a href="login.php" class="btn btn-danger btn-raised btn-lg">
             Login <i class="fa fa-sign-in"></i>
-          </a>
+          </a> -->
         </div>
       </div>
     </div>
@@ -35,9 +38,10 @@
             <h5 class="description">Consortium's Campus Ambassador Program is a campus connect program that aims to form a network of like-minded students across India. The program facilitates and nurtures future leaders of the country and contributes to their career growth. We want to empower and groom select students across India who will serve as  experts in their respective institutions.</h5>
           </div>
         </div>
-        <div style="margin-top:80px"></div>
+        <div style="margin-top:80px">
+        </div>
 
-        <div style="position:relative;height:0;padding-bottom:56.24%"><iframe src="https://www.youtube.com/embed/gKfnDdUL-LE?ecver=2&controls=0&showinfo=0&modestbranding=1&vq=highres&rel=0" style="position:absolute;width:100%;height:100%;left:0" width="640" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+        <!-- <div style="position:relative;height:0;padding-bottom:56.24%"><iframe src="https://www.youtube.com/embed/gKfnDdUL-LE?ecver=2&controls=0&showinfo=0&modestbranding=1&vq=highres&rel=0" style="position:absolute;width:100%;height:100%;left:0" width="640" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div> -->
 
 <div style="margin-top:80px"></div>
         <h2 class="title">Incentives</h2>
@@ -231,6 +235,8 @@
 
 
   <?php include("includes/footer.php") ?>
+
+
 
   <!--   Core JS Files   -->
   <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
