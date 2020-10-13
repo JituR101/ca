@@ -21,4 +21,3 @@
   <link href="assets/css/material-kit.css?v=0.0.1" rel="stylesheet" />
   <link href="css/global/global.css" rel="stylesheet" />
 </head>
-    <!-- End Head -->
