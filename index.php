@@ -46,35 +46,68 @@
 <div style="margin-top:80px"></div>
         <h2 class="title">Incentives</h2>
         <div class="features">
+
           <div class="row">
             <div class="col-md-4">
               <div class="info">
                 <div class="icon ">
-                  <img class="feature-icon" src="./icons/svg/events.svg" alt="events" />
+                  <i class="material-icons">featured_play_list</i>
                 </div>
-                <h4 class="info-title">Events</h4>
-                <p>Top Performers of each event shall be given free entries/passes for the respective event</p>
+                <h4 class="info-title">Certificate</h4>
+                <p>Top CAs will be awarded a Certificate Of Organization by Consortium, VNIT Nagpur recognizing their work</p>
               </div>
             </div>
             <div class="col-md-4">
               <div class="info">
                 <div class="icon">
-                  <img class="feature-icon" src="./icons/svg/skills.svg" alt="skill development" />
+                  <i class="material-icons">airplay</i>
                 </div>
-                <h4 class="info-title">Skill Development</h4>
-                <p>Get a platform to improve your management skills by being a part of our student network</p>
+                <h4 class="info-title">Webinars</h4>
+                <p>Access to exclusive webinars organised by E-Cell VNIT Nagpur</p>
               </div>
             </div>
             <div class="col-md-4">
               <div class="info">
                 <div class="icon">
-                  <img class="feature-icon" src="./icons/svg/prizes.svg" alt="prizes" />
+                  <i class="material-icons">highlight</i>
                 </div>
-                <h4 class="info-title">Prizes</h4>
-                <p>Top performers of the year shall get a chance to win exciting prizes worth &#8377; 5000 </p>
+                <h4 class="info-title">Internships</h4>
+                <p>Top 20 Capmus Ambassadors will be given Internship Opportunity</p>
               </div>
             </div>
-        </div>
+
+
+            <div class="row">
+              <div class="col-md-4">
+                <div class="info">
+                  <div class="icon ">
+                    <img class="feature-icon" src="./img/icons/svg/events.svg" alt="events" />
+                  </div>
+                  <h4 class="info-title">Events</h4>
+                  <p>Top Performers of each event shall be given free entries/passes for the respective event</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="info">
+                  <div class="icon">
+                    <img class="feature-icon" src="./img/icons/svg/skills.svg" alt="skill development" />
+                  </div>
+                  <h4 class="info-title">Skill Development</h4>
+                  <p>Get a platform to improve your management skills by being a part of our student network</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="info">
+                  <div class="icon">
+                    <img class="feature-icon" src="./img/icons/svg/prizes.svg" alt="prizes" />
+                  </div>
+                  <h4 class="info-title">Prizes</h4>
+                  <p>Top performers of the year shall get a chance to win exciting prizes worth &#8377; 5000 </p>
+                </div>
+              </div>
+          </div>
+
+
         </div>
       <div class="section section-contacts" id="signin">
         <div class="row">
