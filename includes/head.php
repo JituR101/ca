@@ -20,4 +20,5 @@
   <!-- CSS Files -->
   <link href="assets/css/material-kit.css?v=0.0.1" rel="stylesheet" />
   <link href="css/global/global.css" rel="stylesheet" />
+  <link href="css/icon-styling.css" rel="stylesheet" />
 </head>
