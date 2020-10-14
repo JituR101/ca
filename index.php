@@ -54,7 +54,7 @@
                   <i class="material-icons">featured_play_list</i>
                 </div>
                 <h4 class="info-title">Certificate</h4>
-                <p>Top CAs will be awarded a Certificate Of Organization by Consortium, VNIT Nagpur recognizing their work</p>
+                <p>Top CAs will be awarded a Certificate Of Organization by E-Cell, VNIT Nagpur recognizing their work</p>
               </div>
             </div>
             <div class="col-md-4">
@@ -112,7 +112,7 @@
       <div class="section section-contacts" id="signin">
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto">
-            <h4 class="text-center description"><b>So here's a chance to be an extended part of the organizing team of Consortium'20 and ignite a spirit of entrepreneurship among the young minds of your college.</b></h4>
+            <h4 class="text-center description"><b>So here's a chance to be an extended part of the organizing team of E-Cell VNIT and ignite a spirit of entrepreneurship among the young minds of your college.</b></h4>
             <h2 class="text-center title">Join Now</h2>
 
                     	<form role="form" action="store.php" method="post" class="f1 contact-form container" >
