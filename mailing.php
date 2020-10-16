@@ -24,14 +24,17 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                               font-family:Helvetica,Arial,sans-serif;
                           }
 
-                          h2{
-                              text-align: center;
-                              margin-top: 150px;
-
+                          h2
+                          {
+                            font-size: 1.3rem;
                           }
                           html, body{
                               background-color:#f7f9fb;
                               margin: 0;
+                          }
+                          h3,h4
+                          {
+                            font-size: 1rem;
                           }
                           .context {
                               font-size: 12px;
@@ -43,6 +46,10 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                           .context p{
                               font-size: 12px;
                           }
+                          #conditions
+                          {
+                            font-size: 0.7rem;
+                          }
                           p{
                               margin: 15px 0px;
                           }
@@ -52,30 +59,41 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                   <body>
 
                       <div style='background: #0b0b0b; padding:10px 30px;'><img src='https://www.ecellvnit.org/img/logo-ecell.png'></div>
-                      <h2 style='font-size:22px;'>Welcome to C-Suites | E-Cell VNIT</h2><br>
 
                       <div class='context'>
 
 
-                          <h3><b>Greetings ".$name."!</b></h3>
+                          <h2><b>Greetings ".$name."!</b></h2>
 
 
-                          <p>Thank You for registering! You are now a part of Campus Amabssdor VNIT Nagpur, <b>The C-Suites</b>.</p>
+                          <p>Thank you for  showing interest in our <b>Campus Ambassador Program</b> through which we aim to extend our entrepreneurial network across the country.</p>
                           <div>
-                              <p>We are well pleased to have you on board.<br/>
-                              <p>We will contact you soon to brief you about planned activities.<br/>
-                              For queries and in case of any difficulty, feel free to contact us.<br>
-                              Lakshya: +91 77384 46941<br>
-                                  <p>
-                                  With warm regards,<br>
-                                  E-Cell VNIT
-                              </p>
+                            <h4>Pre-hiring Task:</h4>
+                            <p>E-Cell VNIT is conducting a IPL  Fantasy League Auction, an event where in people get an opportunity to form their own dream team. *</p>
 
+                            <a href='https://www.instagram.com/p/CGXhsAvncO1/?igshid=ed7n548sbsp6'>Ecell VNIT on Instagram | IPL Auction</a>
 
+                            <p style='font-size: 0.7rem;'>
+                              * Further details shall be shared later
+                            </p>
+                            <h4>Perks: </h4>
+                            <p>
+                              On bringing at least four teams from their college candidate shall receive the following benefits:
+                              <ol>
+                                <li>Free entry in <b>IPL Auction</b></li>
+                                <li><b>Certificate</b> as a part of organising team for 'IPL Auction' by <b>E-Cell VNIT</b></li>
+                                <li>Direct entry to the <b>CA program</b> for E-Cell VNIT for the calendar year 2020-21</li>
+                              </ol>
+                            </p>
                           </div>
+
+                          <p>
+                            Regards<br />
+                            <b>Team E-Cell VNIT</b>
+                          </p>
                       </div>
                   </body>
-              </html>";
+                                      </html>";
 
     $url = 'https://startupconclave.ecellvnit.org/send';
     $data = array('subject' => $subject, 'email' => $to, 'html' => $html, 'pass' => 'Entrepreneurs2020');
