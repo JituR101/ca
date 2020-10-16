@@ -39,8 +39,8 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                           .context {
                               font-size: 12px;
                               padding: 40px 60px;
-                              margin-left:10%;
-                              margin-right: 10%;
+                              margin-left:7%;
+                              margin-right: 7%;
                           }
 
                           .context p{
