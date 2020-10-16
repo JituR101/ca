@@ -2,6 +2,8 @@
 
 session_start();
 
+require_once('mailing.php');
+
 if(isset($_POST['register']))
 {
  $servername = "localhost";
@@ -28,6 +30,8 @@ if ($conn->connect_error){
    $sql = "INSERT INTO cap (name, email, collegeName, collegeCity, collegeStrength, pincode, collegeAdd, mobile, whatsapp) VALUES 
    ('$Name', '$email', '$collegeName','$collegeCity', '$collegeStrength', '$collegePincode', '$collegeAddress', '$mobileNumber', '$whatsappNumber' )";   
    if ($conn->query($sql) === TRUE) {
+    $s = "Welcome to Campus Ambassador E-Cell, VNIT ";
+    $sent = htmlMail($email, $s, $Name, '', '');
     header('LOCATION:thanks.php');
   } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
