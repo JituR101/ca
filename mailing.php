@@ -12,6 +12,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
     $html = "<!DOCTYPE html>
               <html>
                   <head>
+                  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1">
                       <style>
                           li{
                               padding:10px;
@@ -38,7 +39,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                           }
                           .context {
                               font-size: 12px;
-                              padding: 40px 60px;
+                              padding: 40px 50px;
                               margin-left:7%;
                               margin-right: 7%;
                           }
@@ -46,12 +47,18 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                           .context p{
                               font-size: 12px;
                           }
-                          #conditions
-                          {
-                            font-size: 0.7rem;
-                          }
+
                           p{
                               margin: 15px 0px;
+                          }
+
+                          @media(max-width: 600px)
+                          {
+                            .context{
+                              padding: 0px 30px;
+                              margin-left: 0;
+                              margin-right: 0;
+                            }
                           }
 
                       </style>
