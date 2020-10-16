@@ -26,6 +26,15 @@ if ($conn->connect_error){
  $collegeAddress = $_POST['CollegeAddress'];
  $mobileNumber = $_POST['MobileNumber'];
  $whatsappNumber = $_POST['WhatsappNumber'];
+ $Name = $conn -> real_escape_string($_POST['Name']);
+ $email = $conn -> real_escape_string($_POST['Email']);
+ $collegeName = $conn -> real_escape_string($_POST['CollegeName']);
+ $collegeCity = $conn -> real_escape_string($_POST['CollegeCity']);
+ $collegeStrength = $conn -> real_escape_string($_POST['CollegeStrength']);
+ $collegePincode = $conn -> real_escape_string($_POST['CollegePincode']);
+ $collegeAddress = $conn -> real_escape_string($_POST['CollegeAddress']);
+ $mobileNumber = $conn -> real_escape_string($_POST['MobileNumber']);
+ $whatsappNumber = $conn -> real_escape_string($_POST['WhatsappNumber']);
   $_SESSION['name']=$Name;
    $sql = "INSERT INTO cap (name, email, collegeName, collegeCity, collegeStrength, pincode, collegeAdd, mobile, whatsapp) VALUES 
    ('$Name', '$email', '$collegeName','$collegeCity', '$collegeStrength', '$collegePincode', '$collegeAddress', '$mobileNumber', '$whatsappNumber' )";   
